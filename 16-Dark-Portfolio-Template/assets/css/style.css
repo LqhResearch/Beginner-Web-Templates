@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+:root {
+    --blue: #2196F3;
+    --grey: #616161;
+    --light: #f1f1f1;
+    --dark: #222;
+    --hover: #ccc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+
+/* ---------------------------- Common ---------------------------- */
+
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+hr {
+    width: 200px;
+    border: 0;
+    border-bottom: 1px solid #eee;
+    margin: 20px 0;
+    opacity: 0.6;
+}
+
+input:not([type="submit"]) {
+    width: 100%;
+    font-family: inherit;
+    line-height: inherit;
+    font-size: inherit;
+    padding: 16px 8px;
+    margin-bottom: 16px;
+    border: 1px solid var(--hover);
+}
+
+p {
+    margin: 15px 0;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.width--980 {
+    max-width: 980px;
+    margin: auto;
+}
+
+.btn {
+    background-color: transparent;
+    color: black;
+    font-size: inherit;
+    line-height: inherit;
+    padding: 8px 16px;
+    border: none;
+    outline: none;
+    user-select: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn--lg {
+    padding: 12px 24px;
+}
+
+.btn__icon {
+    background-color: var(--dark);
+    color: white;
+    padding: 12px 24px;
+    display: block;
+}
+
+.btn:hover {
+    background-color: var(--hover);
+    color: black;
+}
+
+.hover--black:hover {
+    background-color: black;
+    color: white;
+}
+
+.btn--width-full {
+    width: 100%;
+}
+
+.progress {
+    position: relative;
+    width: 100%;
+    height: 28px;
+    background-color: white;
+}
+
+.progress__value {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    width: var(--progress-value);
+    background-color: var(--grey);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fs--12 {
+    font-size: 12px;
+}
+
+.fs--18 {
+    font-size: 18px;
+}
+
+.fs--24 {
+    font-size: 24px;
+}
+
+.fs--36 {
+    font-size: 36px;
+}
+
+.fs--64 {
+    font-size: 64px;
+}
+
+.bg--light {
+    background-color: var(--light);
+    color: black;
+}
+
+.bg--white {
+    background-color: white;
+    color: black;
+}
+
+.bg--black {
+    background-color: black;
+    color: white;
+}
+
+.text--light {
+    color: var(--light);
+}
+
+.text--grey {
+    color: var(--grey);
+}
+
+.text--center {
+    text-align: center;
+}
+
+.text--justify {
+    text-align: justify;
+}
+
+.spacing--4 {
+    letter-spacing: 4px;
+}
+
+.flex--center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hide--lg {
+    display: none;
+}
+
+.grid--2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid--4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid__gutter {
+    gap: 16px;
+}
+
+
+/* ---------------------------- Sidebar ---------------------------- */
+
+.main {
+    position: relative;
+    background-color: black;
+    color: white;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 120px;
+    overflow-y: auto;
+    background-color: var(--dark);
+}
+
+
+/* ---------------------------- Navbar mobile ---------------------------- */
+
+.mobile__nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    font-size: 12px;
+    opacity: 0.6;
+    display: none;
+}
+
+.nav-mobile:hover {
+    opacity: 1;
+}
+
+
+/* ---------------------------- Content: Header ---------------------------- */
+
+.content {
+    margin-left: 120px;
+    padding: 12px 24px;
+}
+
+.content__img {
+    padding: 32px 16px;
+}
+
+.content__img img {
+    margin-bottom: 64px;
+}
+
+
+/* ---------------------------- Content: About ---------------------------- */
+
+.about__statistic {
+    background-color: var(--light);
+    color: black;
+    margin: 32px 0;
+    padding: 16px 0;
+}
+
+
+/* ---------------------------- Price card ---------------------------- */
+
+.price__card {
+    text-align: center;
+    list-style: none;
+    opacity: 0.6;
+}
+
+.price__card:hover {
+    opacity: 1;
+}
+
+.price__card li {
+    background-color: white;
+    color: black;
+    padding: 16px;
+    border-bottom: 1px solid var(--hover);
+}
+
+.price__head {
+    background-color: var(--dark) !important;
+    color: white !important;
+    font-size: 24px;
+    padding: 32px !important;
+}
+
+.price__footer {
+    background-color: var(--light) !important;
+    padding: 24px !important;
+}
+
+.reputation__item {
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+}
+
+.reputation__item img {
+    width: 80px;
+    margin-right: 18px;
+    border-radius: 50%;
+}
+
+
+/* ---------------------------- Photo ---------------------------- */
+
+#photo {
+    margin: 128px 0;
+}
+
+#photo img {
+    margin-bottom: 16px;
+}
+
+
+/* ---------------------------- Contact ---------------------------- */
+
+#contact i {
+    margin-right: 16px;
+}
+
+
+/* ---------------------------- Footer ---------------------------- */
+
+.footer {
+    margin-top: 64px;
+    padding: 64px 0;
+}
+
+.footer__social i {
+    font-size: 24px;
+}
+
+.footer__social i:hover {
+    opacity: 0.6;
+}
+
+.footer__copyright a {
+    color: inherit;
+}
+
+.footer__copyright a:hover {
+    color: var(--blue);
+}
+
+
+/* ---------------------------- Responsive: Tablet ---------------------------- */
+
+@media screen and (max-width: 991.98px) {}
+
+
+/* ---------------------------- Responsive: Mobile ---------------------------- */
+
+@media screen and (max-width: 767.98px) {
+    /* Common class */
+    .grid--full-sm {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .hide--sm {
+        display: none;
+    }
+    .hide--lg {
+        display: grid;
+    }
+    /* Content */
+    .content {
+        margin: 0;
+    }
+}

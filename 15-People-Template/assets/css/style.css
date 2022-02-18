@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap');
+:root {
+    --red: #f44336;
+    --blue: #2196F3;
+    --grey: #9e9e9e;
+    --light: #f1f1f1;
+    --dark: #616161;
+    --hover: #ccc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+
+/* ---------------------------- Common ---------------------------- */
+
+h2,
+h3,
+h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+hr {
+    border: 0;
+    border-bottom: 1px solid #eee;
+    margin: 20px 0;
+}
+
+p {
+    margin: 15px 0;
+}
+
+b {
+    font-weight: 600;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+input:not([type="submit"]) {
+    width: 100%;
+    font-family: inherit;
+    line-height: inherit;
+    font-size: inherit;
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid var(--hover);
+}
+
+.btn {
+    background-color: transparent;
+    color: black;
+    font-size: inherit;
+    line-height: inherit;
+    padding: 8px 16px;
+    border: none;
+    outline: none;
+    user-select: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--hover);
+    color: black;
+}
+
+.btn--width-full {
+    width: 100%;
+}
+
+.btn--lg {
+    padding: 12px 24px;
+}
+
+.progress {
+    position: relative;
+    width: 100%;
+    height: 30.5px;
+    background-color: white;
+}
+
+.progress__value {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    width: var(--progress-value);
+    background-color: var(--grey);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.badge {
+    line-height: inherit;
+    font-size: inherit;
+    background-color: transparent;
+    color: black;
+    padding: 0 8px;
+    text-align: center;
+    display: inline-block;
+}
+
+.badge.active {
+    background-color: black;
+    color: white;
+}
+
+.width--600 {
+    max-width: 600px;
+    margin: auto;
+}
+
+.bg--red {
+    background-color: var(--red);
+    color: black;
+}
+
+.bg--grey {
+    background-color: var(--grey);
+    color: black;
+}
+
+.bg--black {
+    background-color: black;
+    color: white;
+}
+
+.bg--white {
+    background-color: white;
+    color: black;
+}
+
+.text--center {
+    text-align: center;
+}
+
+.text--justify {
+    text-align: justify;
+}
+
+.fs--18 {
+    font-size: 18px;
+}
+
+.letter--4 {
+    letter-spacing: 4px;
+}
+
+.flex--center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex--between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.grid--2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid__gutter {
+    gap: 16px;
+}
+
+
+/* ---------------------------- Header ---------------------------- */
+
+.main {
+    position: relative;
+    background-color: var(--light);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    font-size: 24px;
+    background-color: white;
+    padding: 16px;
+}
+
+.header__brand {
+    padding: 8px 16px;
+}
+
+
+/* ---------------------------- Sidebar ---------------------------- */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+
+.sidebar__content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    width: 250px;
+    animation: animateright 0.4s;
+}
+
+@keyframes animateright {
+    0% {
+        right: -300px;
+        opacity: 0;
+    }
+    100% {
+        right: 0;
+        opacity: 1;
+    }
+}
+
+.sidebar .btn {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--light);
+    padding: 16px;
+    display: block;
+}
+
+.sidebar .btn:first-child {
+    padding: 32px;
+}
+
+
+/* ---------------------------- Portfolio ---------------------------- */
+
+#portfolio {
+    filter: grayscale(50%);
+    margin-top: 84px;
+}
+
+#portfolio img:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.pagination {
+    padding: 32px 0;
+}
+
+
+/* ---------------------------- Pagination ---------------------------- */
+
+.pagination {
+    padding: 32px 0;
+}
+
+.pagination__item {
+    padding: 8px 16px;
+    display: table-cell;
+}
+
+.pagination__item.active {
+    background-color: black;
+    color: white;
+}
+
+.pagination__item:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* ---------------------------- Modal buy tickets ---------------------------- */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: black;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__content {
+    color: white;
+    margin: auto 16px;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+    animation: zoom 0.4s;
+}
+
+.modal__img {
+    width: 400px;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.modal__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 24px;
+    background-color: transparent;
+    color: white;
+}
+
+
+/* ---------------------------- About ---------------------------- */
+
+#about {
+    background-color: var(--dark);
+    color: white;
+    padding: 32px 16px;
+}
+
+#about img {
+    padding: 32px 0;
+}
+
+.btn--download {
+    margin: 32px 0;
+}
+
+
+/* ---------------------------- Price card ---------------------------- */
+
+.price__card {
+    text-align: center;
+    list-style: none;
+}
+
+.price__card li {
+    background-color: white;
+    color: black;
+    padding: 16px;
+    border-bottom: 1px solid var(--hover);
+}
+
+.price__head {
+    background-color: black !important;
+    color: white !important;
+    font-size: 24px;
+    padding: 32px !important;
+}
+
+.price__footer {
+    background-color: var(--light) !important;
+    padding: 24px !important;
+}
+
+
+/* ---------------------------- Contact ---------------------------- */
+
+#contact {
+    background-color: var(--light);
+    color: black;
+    padding: 32px 16px;
+}
+
+.card__ul {
+    list-style: none;
+}
+
+.card__li {
+    padding: 16px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.card__li:not(:last-child) {
+    border-bottom: 1px solid var(--hover);
+}
+
+.card__li:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.card__li img {
+    width: 50px;
+    margin-right: 16px;
+}
+
+.card__badges .badge:not(.active) {
+    font-size: 12px;
+    background-color: var(--dark);
+    color: white;
+    margin-bottom: 16px;
+}
+
+
+/* ---------------------------- Footer ---------------------------- */
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 8px 0;
+    text-align: center;
+}
+
+.footer__copyright a {
+    color: inherit;
+}
+
+.footer__copyright a:hover {
+    color: var(--blue);
+}
+
+
+/* ---------------------------- Responsive: Tablet ---------------------------- */
+
+@media screen and (max-width: 991.98px) {}
+
+
+/* ---------------------------- Responsive: Mobile ---------------------------- */
+
+@media screen and (max-width: 767.98px) {
+    /* Common class */
+    .grid--full-sm {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .hide--sm {
+        display: none;
+    }
+}

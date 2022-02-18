@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior design template</title>
+    <link rel="icon" href="./assets/img/favicon.png">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Style -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <br>
+            <h3 class="sidebar__brand"><b>Company<br>Name</b></h3>
+            <div class="sidebar__nav">
+                <a href="#" class="btn btn--width-full"><b>Home</b></a>
+                <a href="#showcase" class="btn btn--width-full"><b>Showcase</b></a>
+                <a href="#service" class="btn btn--width-full"><b>Services</b></a>
+                <a href="#designer" class="btn btn--width-full"><b>Designers</b></a>
+                <a href="#package" class="btn btn--width-full"><b>Packages</b></a>
+                <a href="#contact" class="btn btn--width-full"><b>Contact</b></a>
+                <a class="sidebar__close btn btn--width-full hide--lg"><b>Close</b></a>
+            </div>
+        </div>
+
+        <div class="modal">
+            <div class="modal__content">
+                <img class="modal__img" src="../Images/kitchenconcrete.jpg" alt="Concrete meets bricks">
+                <p class="modal__desc">Concrete meets bricks</p>
+            </div>
+            <div class="btn btn--lg bg--black modal__close"><i class="fas fa-times"></i></div>
+        </div>
+
+        <div class="mobile__nav">
+            <div class="btn"><i class="fas fa-bars"></i></div>
+            <span>Company Name</span>
+        </div>
+
+        <div class="content">
+            <h1 class="fs--64"><b>Interior Design</b></h1>
+
+            <div id="showcase">
+                <h1 class="fs--48 text--red"><b>Showcase.</b></h1>
+                <hr>
+                <div class="grid--2 grid--full-sm grid__gutter">
+                    <div>
+                        <img onclick="onClick(this)" src="../Images/kitchenconcrete.jpg" alt="Concrete meets bricks">
+                        <img onclick="onClick(this)" src="../Images/livingroom.jpg" alt="Light, white and tight scandinavian design">
+                        <img onclick="onClick(this)" src="../Images/diningroom.jpg" alt="White walls with designer chairs">
+                    </div>
+                    <div>
+                        <img onclick="onClick(this)" src="../Images/atrium.jpg" alt="Windows for the atrium">
+                        <img onclick="onClick(this)" src="../Images/bedroom.jpg" alt="Bedroom and office in one space">
+                        <img onclick="onClick(this)" src="../Images/livingroom2.jpg" alt="Scandinavian design">
+                    </div>
+                </div>
+            </div>
+
+            <div id="service">
+                <h1 class="fs--48 text--red"><b>Services.</b></h1>
+                <hr>
+                <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
+                <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                    mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <div id="designer">
+                <h1 class="fs--48 text--red"><b>Designers.</b></h1>
+                <hr>
+                <p>The best team in the world.</p>
+                <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p><b>Our designers are thoughtfully chosen:</b></p>
+
+                <div class="grid--3 grid--full-sm grid__gutter">
+                    <div class="card">
+                        <img src="../Images/team2.jpg" alt="Team 2">
+                        <div class="card__body">
+                            <h3>John Doe</h3>
+                            <p class="opacity">CEO & Founder</p>
+                            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../Images/team1.jpg" alt="Team 1">
+                        <div class="card__body">
+                            <h3>Jane Doe</h3>
+                            <p class="opacity">Designer</p>
+                            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../Images/team3.jpg" alt="Team 3">
+                        <div class="card__body">
+                            <h3>Mike Ross</h3>
+                            <p class="opacity">Architect</p>
+                            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="package">
+                <h1 class="fs--48 text--red"><b>Packages.</b></h1>
+                <hr>
+                <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
+                <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure</p>
+
+                <div class="grid--2 grid--full-sm grid__gutter">
+                    <ul class="price__card">
+                        <li class="price__head">Basic</li>
+                        <li>Floorplanning</li>
+                        <li>10 hours support</li>
+                        <li>Photography</li>
+                        <li>20% furniture discount</li>
+                        <li>Good deals</li>
+                        <li>
+                            <h2>$ 199</h2>
+                            <span class="opacity">per month</span>
+                        </li>
+                        <li class="price__footer flex--center">
+                            <div class="btn btn--lg hover--black bg--white">Sign Up</div>
+                        </li>
+                    </ul>
+                    <ul class="price__card">
+                        <li class="price__head active">Pro</li>
+                        <li>Floorplanning</li>
+                        <li>50 hours support</li>
+                        <li>Photography</li>
+                        <li>50% furniture discount</li>
+                        <li>GREAT deals</li>
+                        <li>
+                            <h2>$ 249</h2>
+                            <span class="opacity">per month</span>
+                        </li>
+                        <li class="price__footer flex--center">
+                            <div class="btn btn--lg hover--black bg--red">Sign Up</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="contact">
+                <h1 class="fs--48 text--red"><b>Contact.</b></h1>
+                <hr>
+                <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+
+                <form action="" method="POST">
+                    <p>Name <input type="text" required></p>
+                    <p>Email <input type="email" required></p>
+                    <p>Message <input type="text" required></p>
+                    <p><input type="submit" class="btn btn--width-full btn--lg bg--red" value="Send Message" required></p>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p class="footer__copyright">Powered by
+                <a href="https://github.com/LqhResearch" target="_blank">LqhResearch</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

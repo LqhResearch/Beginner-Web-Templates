@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap');
+:root {
+    --blue: #2196F3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+
+/* ---------------------------- Common ---------------------------- */
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 36px;
+}
+
+hr {
+    border: 0;
+    border-bottom: 1px solid #eee;
+    margin: 20px 0;
+}
+
+p {
+    margin: 15px 0;
+}
+
+.fs--18 {
+    font-size: 18px;
+}
+
+.fs--64 {
+    font-size: 64px;
+}
+
+
+/* ---------------------------- Main ---------------------------- */
+
+.main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: center / cover no-repeat url("../../../Images/forestbridge.jpg");
+    color: white;
+}
+
+.brand,
+.content,
+.footer {
+    padding: 12px 24px;
+}
+
+.brand {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 24px;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.content hr {
+    width: 40%;
+    margin: auto;
+}
+
+
+/* ---------------------------- Footer ---------------------------- */
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.footer__copyright a {
+    color: inherit;
+}
+
+.footer__copyright a:hover {
+    color: var(--blue);
+}

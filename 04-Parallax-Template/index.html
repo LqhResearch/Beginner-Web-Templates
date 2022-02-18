@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax template</title>
+    <link rel="icon" href="./assets/img/favicon.png">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Style -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="main">
+        <header class="header--top header--close flex--between">
+            <!-- Navbar -->
+            <ul class="nav">
+                <li class="nav__item"><a href="#" class="nav__link btn">HOME</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link btn"><i class="fa fa-user"></i> ABOUT</a></li>
+                <li class="nav__item"><a href="#portfolio" class="nav__link btn"><i class="fas fa-th"></i> PORTFOLIO</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link btn"><i class="fa fa-envelope"></i> CONTACT</a></li>
+            </ul>
+
+            <!-- Navbar mobile -->
+            <ul class="nav__mobile">
+                <li class="nav__item"><a href="#about" class="nav__link btn btn--width-full">ABOUT</a></li>
+                <li class="nav__item"><a href="#portfolio" class="nav__link btn btn--width-full">PORTFOLIO</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link btn btn--width-full">CONTACT</a></li>
+                <li class="nav__item hide--lg"><a href="#" class="nav__link btn btn--width-full">SEARCH</a></li>
+            </ul>
+
+            <!-- Header tools -->
+            <div class="btn hide--sm">
+                <i class="fa fa-search"></i>
+            </div>
+            <div class="btn hide--lg js__mobile-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </header>
+
+        <div class="header--bottom flex--center">
+            <div class="header__title">MY <span class="hide--sm">WEBSITE </span>LOGO</div>
+        </div>
+
+        <div id="about">
+            <h3 class="text--center">ABOUT ME</h3>
+            <p class="text--center"><i>I love photography</i></p>
+
+            <p class="text--justify">
+                We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.
+            </p>
+
+            <div class="grid--2 grid--full-sm">
+                <div class="padding">
+                    <p class="text--center"><b><i class="fa fa-user"></i> My Name</b></p>
+                    <br>
+                    <img class="about__img" src="../Images/avatar_hat.jpg" alt="Avatar hat">
+                </div>
+
+                <div class="padding hide--sm">
+                    <p class="text--justify">
+                        Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+            </div>
+
+            <p class="about__job">Im really good at:</p>
+            <div>
+                <p class="spacing--10"><i class="fa fa-camera"></i> Photography</p>
+                <div class="progress">
+                    <div class="progress__value" style="--progress-value: 90%;">90%</div>
+                </div>
+
+                <p class="spacing--10"><i class="fas fa-laptop"></i> Web Design</p>
+                <div class="progress">
+                    <div class="progress__value" style="--progress-value: 85%;">85%</div>
+                </div>
+
+                <p class="spacing--10"><i class="far fa-image"></i> Photoshop</p>
+                <div class="progress">
+                    <div class="progress__value" style="--progress-value: 75%;">75%</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid--4 grid--full-sm">
+            <div class="about__info">
+                <span class="fs--24">14+</span>
+                <br>Partners
+            </div>
+            <div class="about__info">
+                <span class="fs--24">55+</span>
+                <br>Projects Done
+            </div>
+            <div class="about__info">
+                <span class="fs--24">89+</span>
+                <br>Happy Clients
+            </div>
+            <div class="about__info">
+                <span class="fs--24">150+</span>
+                <br>Meetings
+            </div>
+        </div>
+
+        <div class="portfolio flex--center">
+            <div class="portfolio__title">PORTFOLIO</div>
+        </div>
+
+        <div id="portfolio">
+            <h3 class="text--center">MY WORK</h3>
+            <p class="text--center"><i>Here are some of my latest lorem work ipsum tipsum.
+                <br> Click on the images to make them bigger</i>
+            </p>
+            <br>
+
+            <div class="grid--4 grid--full-sm grid__gutter">
+                <div class="portfolio__img">
+                    <img onclick="zoomImage('../Images/p1.jpg', 'The mist over the mountains')" src="../Images/p1.jpg">
+                </div>
+                <div class="portfolio__img">
+                    <img onclick="zoomImage('../Images/p2.jpg', 'Coffee beans')" src="../Images/p2.jpg">
+                </div>
+                <div class="portfolio__img">
+                    <img onclick="zoomImage('../Images/p3.jpg', 'Bear closeup')" src="../Images/p3.jpg">
+                </div>
+                <div class="portfolio__img">
+                    <img onclick="zoomImage('../Images/p4.jpg', 'Quiet ocean')" src="../Images/p4.jpg">
+                </div>
+                <div class="portfolio__img">
+                    <img onclick="zoomImage('../Images/p5.jpg', 'The mist')" src="../Images/p5.jpg">
+                </div>
+                <div class="portfolio__img">
+                    <img onclick="zoomImage('../Images/p6.jpg', 'My beloved typewriter')" src="../Images/p6.jpg">
+                </div>
+                <div class="portfolio__img">
+                    <img onclick="zoomImage('../Images/p7.jpg', 'Empty ghost train')" src="../Images/p7.jpg">
+                </div>
+                <div class="portfolio__img">
+                    <img onclick="zoomImage('../Images/p8.jpg', 'Sailing')" src="../Images/p8.jpg">
+                </div>
+            </div>
+
+            <div class="flex--center">
+                <div class="btn portfolio__btn">LOAD MORE</div>
+            </div>
+        </div>
+
+        <div class="modal">
+            <div class="btn modal__close"><i class="fas fa-times"></i></div>
+            <div class="modal__content">
+                <img class="modal__img" src="../Images/p1.jpg" alt="The mist over the mountains">
+                <p class="fs--18 text--center">The mist over the mountains</p>
+            </div>
+        </div>
+
+        <div class="contact flex--center">
+            <div class="contact__title">CONTACT</div>
+        </div>
+
+        <div id="contact">
+            <h3 class="text--center">WHERE I WORK</h3>
+            <p class="text--center"><i>I'd love your feedback!</i></p>
+
+            <div class="grid--4-8 grid--full-sm grid__gutter">
+                <div style="padding: 0 16px;">
+                    <img style="border-radius: 4px;" src="../Images/map.jpg" alt="Map">
+                </div>
+
+                <div style="padding: 0 16px;">
+                    <div class="contact__info fs--18">
+                        <i class="fas fa-fw fa-map-marker-alt"></i> Chicago, US <br/>
+                        <i class="fas fa-fw fa-phone-alt"></i> Phone: +00 151515 <br/>
+                        <i class="fa fa-fw fa-envelope"></i> Email: mail@mail.com
+                    </div>
+                    <p>Swing by for a cup of <i class="fas fa-coffee"></i>, or leave me a note:</p>
+
+                    <form action="#" method="POST">
+                        <div class="grid--2 grid__gutter">
+                            <input type="text" placeholder="Name">
+                            <input type="text" placeholder="Email">
+                        </div>
+                        <input type="text" placeholder="Message">
+
+                        <div class="flex--end">
+                            <div class="btn bg--black"><i class="fas fa-paper-plane"></i> SEND MESSAGE</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="btn js__back-top">
+                <i class="fas fa-arrow-up"></i> To the top
+            </div>
+
+            <div class="footer__socials">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-snapchat"></i>
+                <i class="fab fa-pinterest-p"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+
+            <p class="footer__copyright">Powered by
+                <a href="https://github.com/LqhResearch" target="_blank">LqhResearch</a>
+            </p>
+        </footer>
+    </div>
+
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

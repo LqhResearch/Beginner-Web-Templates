@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap');
+:root {
+    --red: #f44336;
+    --blue: #2196F3;
+    --green: #4CAF50;
+    --pink: #ffdddd;
+    --grey: #757575;
+    --hover: #ccc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+
+/* ---------------------------- Common ---------------------------- */
+
+h1,
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+p {
+    margin: 15px 0;
+    line-height: 2;
+}
+
+input:not([type="submit"]) {
+    width: 100%;
+    font-family: inherit;
+    line-height: inherit;
+    font-size: inherit;
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid var(--hover);
+}
+
+.width--980 {
+    max-width: 980px;
+    margin: auto;
+}
+
+.btn {
+    background-color: transparent;
+    color: black;
+    font-size: inherit;
+    line-height: inherit;
+    padding: 8px 16px;
+    border: none;
+    outline: none;
+    user-select: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--hover);
+    color: black;
+}
+
+.btn--width-full {
+    width: 100%;
+}
+
+.fs--18 {
+    font-size: 18px;
+}
+
+.fs--64 {
+    font-size: 64px;
+}
+
+.bg--red {
+    background-color: var(--red);
+    color: white;
+}
+
+.bg--green {
+    background-color: var(--green);
+    color: white;
+}
+
+.text--grey {
+    color: var(--grey);
+}
+
+.text--center {
+    text-align: center;
+}
+
+.text--justify {
+    text-align: justify;
+}
+
+.spacing--4 {
+    letter-spacing: 4px;
+}
+
+.flex--center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid--2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+/* ---------------------------- Navbar ---------------------------- */
+
+.main {
+    position: relative;
+}
+
+.navbar {
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: white;
+    color: black;
+    padding: 8px 16px;
+    opacity: 0.75;
+}
+
+.navbar:hover {
+    opacity: 1;
+}
+
+.navbar .btn:hover:last-child {
+    background-color: black;
+    color: white;
+}
+
+
+/* ---------------------------- Header ---------------------------- */
+
+.header {
+    height: 100vh;
+    background: center / cover no-repeat url("../../../Images/wedding_couple.jpg");
+    color: white;
+    text-align: center;
+    filter: grayscale(50%);
+}
+
+
+/* ---------------------------- Jean & John, Wedding ---------------------------- */
+
+#jean-john,
+#wedding {
+    background-color: var(--pink);
+    padding: 64px 16px;
+    filter: grayscale(50%);
+}
+
+#jean-john img,
+#wedding img {
+    margin: 34px 0;
+    border-radius: 8px;
+}
+
+.btn__details {
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    padding: 12px 24px;
+    border-radius: 4px;
+}
+
+
+/* ---------------------------- Banner ---------------------------- */
+
+.banner {
+    height: 100vh;
+    background: center / cover no-repeat url("../../../Images/flowers.jpg");
+}
+
+.banner__content {
+    color: white;
+    text-align: center;
+}
+
+
+/* ---------------------------- RSVP ---------------------------- */
+
+#rsvp {
+    background-color: var(--pink);
+    padding: 64px 16px;
+}
+
+.btn__rsvp {
+    background-color: var(--red);
+    color: white;
+    font-size: 24px;
+    padding: 8px 52px;
+    border-radius: 4px;
+    opacity: 0.6;
+}
+
+
+/* ---------------------------- Modal buy tickets ---------------------------- */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__content {
+    width: 600px;
+    background-color: white;
+    margin: auto 16px;
+    padding: 32px 48px;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+    animation: zoom 0.6s;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* ---------------------------- Footer ---------------------------- */
+
+.footer {
+    background-color: black;
+    color: white;
+    margin-bottom: 50px;
+    padding: 16px;
+    text-align: center;
+}
+
+.footer__copyright a {
+    color: inherit;
+}
+
+.footer__copyright a:hover {
+    color: var(--blue);
+}
+
+
+/* ---------------------------- Responsive: Tablet ---------------------------- */
+
+@media screen and (max-width: 991.98px) {}
+
+
+/* ---------------------------- Responsive: Mobile ---------------------------- */
+
+@media screen and (max-width: 767.98px) {
+    /* Common class */
+    .grid--full-sm {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .hide--sm {
+        display: none;
+    }
+    /* Footer */
+    .footer {
+        margin: 0;
+    }
+}

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics template</title>
+    <link rel="icon" href="./assets/img/favicon.png">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Style -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <span class="hide--lg" style="cursor: pointer;" onclick="toggleSidebar()">
+                <i class="fas fa-bars"></i> Menu
+            </span>
+            <span>Logo</span>
+        </div>
+
+        <div class="sidebar">
+            <br>
+            <div class="sidebar__top grid--4-8">
+                <img src="../Images/avatar2.png" alt="Avatar">
+                <span>
+                    Welcome, <b>Mike</b> <br />
+                    <div class="btn"><i class="fas fa-envelope"></i></div>
+                    <div class="btn"><i class="fas fa-user"></i></div>
+                    <div class="btn"><i class="fas fa-cog"></i></div>
+                </span>
+            </div>
+            <hr>
+            <div class="sidebar__bottom">
+                <h5 class="padding">Dashboard</h5>
+                <div class="btn btn--width-full bg--blue"><i class="fas fa-users fa-fw"></i>&nbsp; Overview</div>
+                <div class="btn btn--width-full"><i class="fas fa-eye fa-fw"></i>&nbsp; Views</div>
+                <div class="btn btn--width-full"><i class="fas fa-users fa-fw"></i>&nbsp; Traffic</div>
+                <div class="btn btn--width-full"><i class="fas fa-bullseye fa-fw"></i>&nbsp; Geo</div>
+                <div class="btn btn--width-full"><i class="fas fa-gem fa-fw"></i>&nbsp; Orders</div>
+                <div class="btn btn--width-full"><i class="fas fa-bell fa-fw"></i>&nbsp; News</div>
+                <div class="btn btn--width-full"><i class="fas fa-university fa-fw"></i>&nbsp; General</div>
+                <div class="btn btn--width-full"><i class="fas fa-history fa-fw"></i>&nbsp; History</div>
+                <div class="btn btn--width-full"><i class="fas fa-cog fa-fw"></i>&nbsp; Settings</div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div style="padding: 22px 16px;">
+                <h5><b><i class="fas fa-tachometer-alt"></i> Dashboard</b></h5>
+
+                <div class="grid--4 grid--full-sm grid__gutter">
+                    <div class="bg--red padding--16">
+                        <div class="flex--between">
+                            <i class="fas fa-comment fs--48"></i>
+                            <h3>52</h3>
+                        </div>
+                        <h4>Messages</h4>
+                    </div>
+
+                    <div class="bg--blue padding--16">
+                        <div class="flex--between">
+                            <i class="fas fa-eye fs--48"></i>
+                            <h3>99</h3>
+                        </div>
+                        <h4>Views</h4>
+                    </div>
+
+                    <div class="bg--teal padding--16">
+                        <div class="flex--between">
+                            <i class="fas fa-share-alt fs--48"></i>
+                            <h3>23</h3>
+                        </div>
+                        <h4>Shares</h4>
+                    </div>
+
+                    <div class="bg--orange padding--16">
+                        <div class="flex--between">
+                            <i class="fas fa-users fs--48"></i>
+                            <h3>50</h3>
+                        </div>
+                        <h4>Users</h4>
+                    </div>
+                </div>
+
+                <div class="panel grid--1-2 grid--full-sm grid__gutter">
+                    <div>
+                        <h5>Regions</h5>
+                        <img src="../Images/region.jpg" alt="Regions">
+                    </div>
+                    <div>
+                        <h5>Feeds</h5>
+                        <table class="content__feed">
+                            <tbody>
+                                <tr>
+                                    <td><i class="fas fa-user text--blue"></i></td>
+                                    <td>New record, over 90 views.</td>
+                                    <td>10 mins</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-bell text--red"></i></td>
+                                    <td>Database error.</td>
+                                    <td>15 mins</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-users text--yellow"></i></td>
+                                    <td>New record, over 40 users.</td>
+                                    <td>17 mins</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-comment text--red"></i></td>
+                                    <td>New comments.</td>
+                                    <td>25 mins</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-bookmark text--blue"></i></td>
+                                    <td>Check transactions.</td>
+                                    <td>28 mins</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-laptop text--red"></i></td>
+                                    <td>CPU overload.</td>
+                                    <td>35 mins</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-share-alt text--green"></i></td>
+                                    <td>New shares.</td>
+                                    <td>39 mins</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="panel">
+                    <hr>
+                    <h5>General Stats</h5>
+                    <p>New Visitors</p>
+                    <div class="progress">
+                        <div class="progress__value" style="--bg: var(--green); --progress-value: 25%">25%</div>
+                    </div>
+                    <p>New Users</p>
+                    <div class="progress">
+                        <div class="progress__value" style="--bg: var(--orange); --progress-value: 50%">50%</div>
+                    </div>
+                    <p>Bounce Rate</p>
+                    <div class="progress">
+                        <div class="progress__value" style="--bg: var(--red); --progress-value: 75%">75%</div>
+                    </div>
+                </div>
+
+                <div class="panel">
+                    <hr>
+                    <table class="border">
+                        <tbody>
+                            <tr>
+                                <td>United States</td>
+                                <td>65%</td>
+                            </tr>
+                            <tr>
+                                <td>UK</td>
+                                <td>15.7%</td>
+                            </tr>
+                            <tr>
+                                <td>Russia</td>
+                                <td>5.6%</td>
+                            </tr>
+                            <tr>
+                                <td>Spain</td>
+                                <td>2.1%</td>
+                            </tr>
+                            <tr>
+                                <td>India</td>
+                                <td>1.9%</td>
+                            </tr>
+                            <tr>
+                                <td>France</td>
+                                <td>1.5%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <div class="btn bg--dark">
+                        More Countries
+                        <span style="margin-left: 8px;"><i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </div>
+
+                <div class="panel">
+                    <hr>
+                    <h5>Recent Users</h5>
+                    <ul class="ul__users">
+                        <li>
+                            <img src="../Images/avatar2.png" alt="Avatar 2">
+                            <span>Mike</span>
+                        </li>
+                        <li>
+                            <img src="../Images/avatar5.png" alt="Avatar 5">
+                            <span>Jill</span>
+                        </li>
+                        <li>
+                            <img src="../Images/avatar6.png" alt="Avatar 6">
+                            <span>Jane</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="panel">
+                    <hr>
+                    <h5>Recent Comments</h5>
+                    <ul class="ul__comments">
+                        <li class="grid--2-10 grid--auto">
+                            <img src="../Images/avatar3.png" alt="Avatar 3">
+                            <div>
+                                <h4>John <span class="fs--15 opacity">Sep 29, 2014, 9:12 PM</span></h4>
+                                <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </li>
+                        <li class="grid--2-10 grid--auto">
+                            <img src="../Images/avatar1.png" alt="Avatar 1">
+                            <div>
+                                <h4>Bo <span class="fs--15 opacity">Sep 28, 2014, 10:15 PM</span></h4>
+                                <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="contact padding--32 bg--dark grid--3 grid--full-sm grid__gutter-lg">
+                <div>
+                    <h5 style="--bc: var(--green)">Demographic</h5>
+                    <p>Language</p>
+                    <p>Country</p>
+                    <p>City</p>
+                </div>
+                <div>
+                    <h5 style="--bc: var(--red)">System</h5>
+                    <p>Browser</p>
+                    <p>OS</p>
+                    <p>More</p>
+                </div>
+                <div>
+                    <h5 style="--bc: var(--orange)">Target</h5>
+                    <p>Users</p>
+                    <p>Active</p>
+                    <p>Geo</p>
+                    <p>Interests</p>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <h4>FOOTER</h4>
+                <p class="footer__copyright">Powered by
+                    <a href="https://github.com/LqhResearch" target="_blank">LqhResearch</a>
+                </p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

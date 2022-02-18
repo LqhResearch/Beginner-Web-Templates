@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+:root {
+    --red: #f44336;
+    --blue: #2196F3;
+    --grey: #9e9e9e;
+    --light: #f1f1f1;
+    --dark: #757575;
+    --hover: #ccc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Amatic SC', cursive;
+    font-size: 24px;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+
+/* ---------------------------- Common ---------------------------- */
+
+h1 {
+    font-family: 'Amatic SC', sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+hr {
+    border: 0;
+    border-bottom: 1px solid #eee;
+    margin: 20px 0;
+}
+
+p {
+    margin: 15px 0;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+input:not([type="submit"]) {
+    width: 100%;
+    font-family: inherit;
+    line-height: inherit;
+    font-size: inherit;
+    padding: 16px 8px;
+    margin-bottom: 24px;
+    border: 1px solid var(--hover);
+}
+
+.flex--center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex--between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn {
+    background-color: transparent;
+    color: black;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    padding: 8px 16px;
+    border: none;
+    outline: none;
+    user-select: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--hover);
+    color: black;
+}
+
+.btn--width-full {
+    width: 100%;
+}
+
+.badge {
+    line-height: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    background-color: transparent;
+    color: black;
+    padding: 0 8px;
+    text-align: center;
+    display: inline-block;
+}
+
+.badge.active {
+    background-color: black;
+    color: white;
+}
+
+.width--980 {
+    max-width: 980px;
+    margin: auto;
+}
+
+.fs--36 {
+    font-size: 36px;
+}
+
+.fs--64 {
+    font-size: 64px;
+}
+
+.bg--red {
+    background-color: var(--red);
+    color: white;
+}
+
+.bg--grey {
+    background-color: var(--grey);
+    color: black;
+}
+
+.bg--light {
+    background-color: var(--light);
+    color: black;
+}
+
+.bg--black {
+    background-color: black;
+    color: white;
+}
+
+.text--dark {
+    color: var(--dark);
+}
+
+.text--center {
+    text-align: center;
+}
+
+.round {
+    border-radius: 4px;
+}
+
+.grid--2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+/* ---------------------------- Main ---------------------------- */
+
+.main {
+    position: relative;
+}
+
+
+/* ---------------------------- Navbar ---------------------------- */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: black;
+    opacity: 0.6;
+}
+
+.navbar:hover {
+    opacity: 1;
+}
+
+.navbar__item {
+    color: white;
+}
+
+
+/* ---------------------------- Navbar ---------------------------- */
+
+.header {
+    position: relative;
+    height: 90vh;
+    background: center / cover no-repeat url("../../../Images/pizza.jpg");
+    filter: grayscale(50%);
+}
+
+.header__brand {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__time {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 8px 6px;
+}
+
+
+/* ---------------------------- Menu ---------------------------- */
+
+#menu {
+    padding: 64px 16px;
+    background-color: black;
+    color: white;
+}
+
+.tab {
+    border: 1px solid var(--hover);
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    display: flex;
+}
+
+.tab__item {
+    width: 33.33333%;
+    cursor: pointer;
+    color: white;
+}
+
+.tab__item.active {
+    background-color: var(--red);
+}
+
+.tab__item:hover {
+    background-color: var(--red);
+    color: white;
+}
+
+.tab__panel {
+    background-color: white;
+    color: black;
+    font-size: 36px;
+    padding: 32px 16px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    display: none;
+}
+
+.tab__panel.active {
+    display: block;
+}
+
+
+/* ---------------------------- About ---------------------------- */
+
+#about {
+    padding: 64px 16px;
+    background-color: var(--red);
+    color: white;
+    filter: grayscale(75%);
+}
+
+.about__img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+
+/* ---------------------------- Contact ---------------------------- */
+
+#contact {
+    padding: 64px 16px;
+    background-color: #607d8b;
+    color: white;
+}
+
+
+/* ---------------------------- Footer ---------------------------- */
+
+.footer {
+    font-size: 36px;
+    background-color: black;
+    color: white;
+    padding: 69px 0;
+    text-align: center;
+}
+
+.footer__copyright a {
+    color: inherit;
+}
+
+.footer__copyright a:hover {
+    color: var(--blue);
+}
+
+
+/* ---------------------------- Responsive: Tablet ---------------------------- */
+
+@media screen and (max-width: 991.98px) {}
+
+
+/* ---------------------------- Responsive: Mobile ---------------------------- */
+
+@media screen and (max-width: 767.98px) {
+    /* Common class */
+    .grid--full-sm {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .hide--sm {
+        display: none;
+    }
+    /* Header */
+    .header__brand {
+        width: 240px;
+        font-size: 60px;
+        font-weight: bold;
+    }
+}

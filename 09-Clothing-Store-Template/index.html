@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing store template</title>
+    <link rel="icon" href="./assets/img/favicon.png">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Style -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <h3 class="sidebar__logo spacing--4"><b>LOGO</b></h3>
+
+            <div class="sidebar__nav">
+                <div class="btn btn--width-full">Shirts</div>
+                <div class="btn btn--width-full">Dresses</div>
+                <div class="btn active btn--width-full js__jeans">Jeans&nbsp;<i class="fas fa-caret-down"></i></div>
+                <div class="sidebar__subnav">
+                    <div class="btn active btn--width-full"><i style="margin-right: 16px;" class="fas fa-caret-right"></i> Skinny</div>
+                    <div class="btn btn--width-full">Relaxed</div>
+                    <div class="btn btn--width-full">Bootcut</div>
+                    <div class="btn btn--width-full">Straight</div>
+                </div>
+                <div class="btn btn--width-full">Jackets</div>
+                <div class="btn btn--width-full">Gymwear</div>
+                <div class="btn btn--width-full">Blazers</div>
+                <div class="btn btn--width-full">Shoes</div>
+            </div>
+            <a href="#contact" class="btn btn--width-full">Contact</a>
+            <a href="#" class="btn btn--width-full js__newsletter">Newsletter</a>
+            <a href="#" class="btn btn--width-full">Subscribe</a>
+        </div>
+
+        <div class="content">
+            <div class="header__top flex--between">
+                <div>Jeans</div>
+                <div>
+                    <span style="margin-right: 16px;">
+                        <i class="fas fa-shopping-cart"></i>
+                    </span>
+                    <span><i class="fas fa-search"></i></span>
+                </div>
+            </div>
+
+            <div class="header__bottom">
+                <img src="../Images/jeans.jpg" alt="Jeans">
+                <div class="header__content">
+                    <h3 class="fs--64 fs--36-sm">New arrivals</h3>
+                    <h3 class="fs--36 hide--sm">COLLECTION 2016</h3>
+                    <a href="#shop" class="btn btn__shop">SHOP NOW</a>
+                </div>
+            </div>
+
+            <div class="header__mobile hide--lg flex--between">
+                <div style="padding: 24px 16px;">LOGO</div>
+                <div class="btn"><i class="fas fa-bars"></i></div>
+            </div>
+
+            <div id="shop">
+                <p>8 items</p>
+                <div class="grid--4 grid--2-sm grid__gutter">
+                    <div class="shop__item">
+                        <div class="shop__img">
+                            <img src="../Images/jeans1.jpg" alt="Jeans 1">
+                        </div>
+                        <p>Ripped Skinny Jeans <br> <b>$24.99</b></p>
+                    </div>
+                    <div class="shop__item">
+                        <div class="shop__img">
+                            <img src="../Images/jeans2.jpg" alt="Jeans 2">
+                            <div class="shop__tag">New</div>
+                            <div class="btn shop__buy">
+                                Buy now <i class="fas fa-shopping-cart"></i>
+                            </div>
+                        </div>
+                        <p>Mega Ripped Jeans <br> <b>$19.99</b></p>
+                    </div>
+                    <div class="shop__item">
+                        <div class="shop__img">
+                            <img src="../Images/jeans3.jpg" alt="Jeans 3">
+                        </div>
+                        <p>Washed Skinny Jeans <br> <b>$20.50</b></p>
+                    </div>
+                    <div class="shop__item">
+                        <div class="shop__img">
+                            <img src="../Images/jeans4.jpg" alt="Jeans 4">
+                        </div>
+                        <p>Vintage Skinny Jeans <br> <b>$14.99</b></p>
+                    </div>
+
+                    <div class="shop__item">
+                        <div class="shop__img">
+                            <img src="../Images/jeans2.jpg" alt="Jeans 2">
+                        </div>
+                        <p>Mega Ripped Jeans <br> <b>$19.99</b></p>
+                    </div>
+                    <div class="shop__item">
+                        <div class="shop__img">
+                            <img src="../Images/jeans3.jpg" alt="Jeans 3">
+                        </div>
+                        <p>Washed Skinny Jeans <br> <b>$20.50</b></p>
+                    </div>
+                    <div class="shop__item">
+                        <div class="shop__img">
+                            <img src="../Images/jeans4.jpg" alt="Jeans 4">
+                            <div class="shop__tag">Sale</div>
+                            <div class="btn shop__buy">
+                                Buy now <i class="fas fa-shopping-cart"></i>
+                            </div>
+                        </div>
+                        <p>Vintage Skinny Jeans <br> <b>$14.99</b></p>
+                    </div>
+                    <div class="shop__item">
+                        <div class="shop__img">
+                            <img src="../Images/jeans1.jpg" alt="Jeans 1">
+                        </div>
+                        <p>Ripped Skinny Jeans <br> <b>$24.99</b></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subscribe">
+                <h1>Subcribe</h1>
+                <p>To get special offers and VIP treatment:</p>
+                <p><input type="text" placeholder="Enter e-mail"></p>
+                <input class="btn bg--red" type="submit" value="Subscribe">
+            </div>
+
+            <div id="contact">
+                <div class="grid--3 grid--full-sm grid__gutter-sm">
+                    <div class="text--center">
+                        <h4>Contact</h4>
+                        <p>Questions? Go ahead.</p>
+                        <form action="#" method="POST">
+                            <p><input type="text" placeholder="Name" required></p>
+                            <p><input type="email" placeholder="Email" required></p>
+                            <p><input type="text" placeholder="Subject" required></p>
+                            <p><input type="text" placeholder="Message" required></p>
+                            <p><input class="btn btn--width-full bg--black" type="submit" value="Send"></p>
+                        </form>
+                    </div>
+
+                    <div class="text--center">
+                        <h4>About</h4>
+                        <p><a href="#">About us</a></p>
+                        <p><a href="#">We're hiring</a></p>
+                        <p><a href="#">Support</a></p>
+                        <p><a href="#">Find store</a></p>
+                        <p><a href="#">Shipment</a></p>
+                        <p><a href="#">Payment</a></p>
+                        <p><a href="#">Gift card</a></p>
+                        <p><a href="#">Return</a></p>
+                        <p><a href="#">Help</a></p>
+                    </div>
+
+                    <div class="store">
+                        <h4>Store</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> Company Name</p>
+                        <p><i class="fas fa-phone-alt"></i> 0044123123</p>
+                        <p><i class="fas fa-envelope"></i> ex@mail.com</p>
+
+                        <h4>We accept</h4>
+                        <p><i class="fab fa-cc-amex"></i> Amex</p>
+                        <p><i class="far fa-credit-card"></i> Credit Card</p>
+
+                        <div class="store__socials">
+                            <i class="fab fa-facebook-square"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-snapchat"></i>
+                            <i class="fab fa-pinterest-p"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <p class="footer__copyright">Powered by
+                    <a href="https://github.com/LqhResearch" target="_blank">LqhResearch</a>
+                </p>
+            </footer>
+        </div>
+
+        <div class="modal">
+            <div class="modal__content text--center">
+                <h1>NEWSLETTER</h1>
+                <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+                <p><input type="email" placeholder="Enter e-mail"></p>
+                <button class="btn btn--lg bg--red">Subscribe</button>
+
+                <div class="btn modal__close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

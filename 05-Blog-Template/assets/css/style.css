@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap');
+:root {
+    --blue: #2196f3;
+    --light: #f1f1f1;
+    --dark: #616161;
+    --hover: #ccc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+
+/* ---------------------------- Common ---------------------------- */
+
+h1,
+h3,
+h4,
+h5 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+hr {
+    border: 0;
+    border-bottom: 1px solid #eee;
+    margin: 20px 0;
+}
+
+p {
+    margin: 15px 0;
+}
+
+b {
+    font-weight: 600;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.btn {
+    background-color: transparent;
+    color: black;
+    font-size: inherit;
+    line-height: inherit;
+    padding: 8px 16px;
+    border: none;
+    outline: none;
+    user-select: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--hover);
+    color: black;
+}
+
+.btn--lg {
+    padding: 12px 24px;
+}
+
+.btn--disabled {
+    cursor: not-allowed;
+    opacity: 0.3;
+}
+
+.btn__outline {
+    border: 1px solid var(--hover);
+}
+
+.badge {
+    line-height: inherit;
+    font-size: inherit;
+    background-color: transparent;
+    color: black;
+    padding: 0 8px;
+    text-align: center;
+    display: inline-block;
+}
+
+.badge--circle {
+    border-radius: 50%;
+}
+
+.badge.active {
+    background-color: black;
+    color: white;
+}
+
+.fs--18 {
+    font-size: 18px;
+}
+
+.bg--black {
+    background-color: black;
+    color: white;
+}
+
+.text--justify {
+    text-align: justify;
+}
+
+.opacity {
+    opacity: 0.6;
+}
+
+.flex--between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.grid--8-4 {
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+}
+
+.grid__gutter {
+    gap: 32px;
+}
+
+
+/* ---------------------------- Header ---------------------------- */
+
+.main {
+    position: relative;
+    background-color: var(--light);
+}
+
+.header {
+    padding: 32px;
+    text-align: center;
+}
+
+
+/* ---------------------------- Content ---------------------------- */
+
+.card {
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+    margin: 16px;
+}
+
+.card__head {
+    padding: 8px 16px;
+}
+
+.card__body {
+    background-color: white;
+    padding: 0.24px 16px;
+}
+
+.card__ul {
+    list-style: none;
+}
+
+.card__li {
+    background-color: white;
+    padding: 16px;
+    border-bottom: 1px solid var(--hover);
+    display: flex;
+    align-items: flex-start;
+}
+
+.card__li:hover {
+    background-color: var(--hover);
+    cursor: pointer;
+}
+
+.card__li img {
+    width: 50px;
+    margin-right: 16px;
+}
+
+.card__body .badge:not(.active) {
+    background-color: var(--light);
+    font-size: 12px;
+}
+
+.card__body .badge {
+    margin-bottom: 16px;
+}
+
+
+/* ---------------------------- Footer ---------------------------- */
+
+.footer {
+    background-color: var(--dark);
+    color: white;
+    padding: 40px 16px;
+    margin-top: 16px;
+}
+
+.footer__copyright a {
+    color: inherit;
+}
+
+.footer__copyright a:hover {
+    color: var(--blue);
+}
+
+
+/* ---------------------------- Responsive: Tablet ---------------------------- */
+
+@media screen and (max-width: 991.98px) {}
+
+
+/* ---------------------------- Responsive: Mobile ---------------------------- */
+
+@media screen and (max-width: 767.98px) {
+    /* Common class */
+    .grid--full-sm {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .hide--sm {
+        display: none;
+    }
+}

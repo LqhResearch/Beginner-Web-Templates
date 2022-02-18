@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap');
+:root {
+    --red: #f44336;
+    --blue: #2196f3;
+    --green: #4CAF50;
+    --light: #f1f1f1;
+    --dark: #757575;
+    --hover: #ccc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+
+/* ---------------------------- Common ---------------------------- */
+
+h2,
+h3,
+h4,
+h6 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+p {
+    margin: 15px 0;
+}
+
+hr {
+    border: 0;
+    border-bottom: 1px solid #eee;
+    margin: 20px 0;
+}
+
+input:not([type="submit"]) {
+    width: 100%;
+    font-family: inherit;
+    line-height: inherit;
+    font-size: inherit;
+    padding: 8px;
+    border: 1px solid var(--hover);
+}
+
+b {
+    font-weight: 600;
+}
+
+i {
+    font-size: inherit;
+    line-height: inherit;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.btn {
+    background-color: transparent;
+    color: black;
+    font-size: inherit;
+    line-height: inherit;
+    padding: 8px 16px;
+    border: none;
+    outline: none;
+    user-select: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--hover);
+    color: black;
+}
+
+.btn--width-full {
+    width: 100%;
+}
+
+.btn i {
+    margin-right: 16px;
+}
+
+.bg--green {
+    background-color: var(--green);
+    color: white;
+}
+
+.bg--black {
+    background-color: black;
+    color: white;
+}
+
+.padding--16 {
+    padding: 16px;
+}
+
+.fs--18 {
+    font-size: 18px;
+}
+
+.text--left {
+    text-align: left;
+    justify-content: flex-start;
+}
+
+.text--green {
+    color: var(--green);
+}
+
+.grid--2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid__gutter {
+    gap: 16px;
+}
+
+
+/* ---------------------------- Header ---------------------------- */
+
+.main {
+    position: relative;
+    max-width: 980px;
+    margin: auto;
+    border: 1px solid var(--hover);
+}
+
+.header__mobile {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* ---------------------------- Content left ---------------------------- */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 260px;
+    background-color: var(--light);
+    color: black;
+    overflow: auto;
+}
+
+
+/* ---------------------------- Content right ---------------------------- */
+
+.content {
+    margin-left: 260px;
+    padding: 0 16px;
+    transition: margin-left 0.4s;
+}
+
+.slider__show {
+    position: relative;
+}
+
+.slider__name {
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    background-color: black;
+    color: white;
+    padding: 16px;
+}
+
+.slider__list {
+    padding: 8px 0;
+}
+
+.slider__list img {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.slider__list img.active,
+.slider__list img:hover {
+    opacity: 1;
+}
+
+
+/* ---------------------------- Footer ---------------------------- */
+
+.footer {
+    margin-top: 48px;
+}
+
+.footer__copyright a {
+    color: inherit;
+}
+
+.footer__copyright a:hover {
+    color: var(--blue);
+}
+
+
+/* ---------------------------- Responsive: Tablet ---------------------------- */
+
+@media screen and (max-width: 991.98px) {}
+
+
+/* ---------------------------- Responsive: Mobile ---------------------------- */
+
+@media screen and (max-width: 767.98px) {
+    /* Common class */
+    .grid--full-sm {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .hide--sm {
+        display: none;
+    }
+    /* Header */
+    .header__mobile {
+        display: flex;
+    }
+    /* Content */
+    .sidebar {
+        display: none;
+    }
+    .sidebar.active {
+        display: block;
+    }
+    .content {
+        margin-left: 0;
+    }
+}

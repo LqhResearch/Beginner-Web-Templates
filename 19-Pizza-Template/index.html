@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant pizza template</title>
+    <link rel="icon" href="./assets/img/favicon.png">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Style -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar hide--sm">
+            <a href="#" class="btn navbar__item">HOME</a>
+            <a href="#menu" class="btn navbar__item">MENU</a>
+            <a href="#about" class="btn navbar__item">ABOUT</a>
+            <a href="#contact" class="btn navbar__item">CONTACT</a>
+        </div>
+
+        <div class="header">
+            <div class="header__brand">
+                <span>THIN <br> CRUST PIZZA</span>
+                <a href="#menu" class="btn fs--36 bg--black">Let me see the menu</a>
+            </div>
+            <div class="badge active header__time">Open from 10am to 12pm</div>
+        </div>
+
+        <div id="menu">
+            <div class="width--980">
+                <h1 class="fs--64 text--center">THE MENU</h1>
+
+                <div class="tab">
+                    <div class="tab__item active btn btn--lg fs--36">Pizza</div>
+                    <div class="tab__item btn btn--lg fs--36">Salads</div>
+                    <div class="tab__item btn btn--lg fs--36">Starter</div>
+                </div>
+                <div class="tab__content">
+                    <div class="tab__panel active">
+                        <h1 class="flex--between">
+                            <b>Margherita</b>
+                            <span class="badge active round">$12.50</span>
+                        </h1>
+                        <p class="text--dark">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+                        <hr>
+
+                        <h1 class="flex--between">
+                            <b>Formaggio</b>
+                            <span class="badge active round">$15.50</span>
+                        </h1>
+                        <p class="text--dark">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
+                        <hr>
+
+                        <h1 class="flex--between">
+                            <b>Chicken</b>
+                            <span class="badge active round">$17.00</span>
+                        </h1>
+                        <p class="text--dark">Fresh tomatoes, mozzarella, chicken, onions</p>
+                        <hr>
+
+                        <h1 class="flex--between">
+                            <b>Pineapple'o'clock</b>
+                            <span class="badge active round">$16.50</span>
+                        </h1>
+                        <p class="text--dark">Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</p>
+                        <hr>
+
+                        <h1 class="flex--between">
+                            <b>Meat Town <span class="badge bg--red round">Hot!</span></b>
+                            <span class="badge active round">$20.00</span>
+                        </h1>
+                        <p class="text--dark">Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</p>
+                        <hr>
+
+                        <h1 class="flex--between">
+                            <b>Parma <span class="badge bg--grey round">New</span></b>
+                            <span class="badge active round">$21.50</span>
+                        </h1>
+                        <p class="text--dark">Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</p>
+                    </div>
+
+                    <div class="tab__panel">
+                        <h1 class="flex--between">
+                            <b>Lasagna <span class="badge bg--grey round">Popular</span></b>
+                            <span class="badge active round">$13.50</span>
+                        </h1>
+                        <p class="text--dark">Special sauce, mozzarella, parmesan, ground beef</p>
+                        <hr>
+
+                        <h1 class="flex--between">
+                            <b>Ravioli</b>
+                            <span class="badge active round">$14.50</span>
+                        </h1>
+                        <p class="text--dark">Ravioli filled with cheese</p>
+                        <hr>
+
+                        <h1 class="flex--between">
+                            <b>Spaghetti Classica</b>
+                            <span class="badge active round">$11.00</span>
+                        </h1>
+                        <p class="text--dark">Fresh tomatoes, onions, ground beef</p>
+                        <hr>
+
+                        <h1 class="flex--between">
+                            <b>Seafood pasta</b>
+                            <span class="badge active round">$25.50</span>
+                        </h1>
+                        <p class="text--dark">Salmon, shrimp, lobster, garlic</p>
+                    </div>
+
+                    <div class="tab__panel">
+                        <h1 class="flex--between">
+                            <b>Today's Soup <span class="badge bg--grey round">Seasonal</span></b>
+                            <span class="badge active round">$5.50</span>
+                        </h1>
+                        <p class="text--dark">Ask the waiter</p>
+                        <hr>
+
+                        <h1 class="flex--between">
+                            <b>Bruschetta</b>
+                            <span class="badge active round">$8.50</span>
+                        </h1>
+                        <p class="text--dark">Bread with pesto, tomatoes, onion, garlic</p>
+                        <hr>
+
+                        <h1 class="flex--between">
+                            <b>Garlic bread</b>
+                            <span class="badge active round">$9.50</span>
+                        </h1>
+                        <p class="text--dark">Grilled ciabatta, garlic butter, onions</p>
+                        <hr>
+
+                        <h1 class="flex--between">
+                            <b>Tomozzarella</b>
+                            <span class="badge active round">$10.50</span>
+                        </h1>
+                        <p class="text--dark">Tomatoes and mozzarella</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="about">
+            <div class="width--980">
+                <h1 class="fs--64 text--center">ABOUT</h1>
+                <p>The Pizza Restaurant was founded in blabla by Mr. Italiano in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="flex--between">
+                    <div>
+                        <p><b>The Chef?</b> Mr. Italiano himselfChef</p>
+                        <p>We are proud of our interiors.</p>
+                    </div>
+                    <img class="about__img" src="../Images/chef.jpg" alt="Chef">
+                </div>
+                <p><img src="../Images/onepage_restaurant.jpg" alt="Onepage Restaurant"></p>
+
+                <h1><b>Opening Hours</b></h1>
+                <div class="grid--2">
+                    <div>
+                        <p>Mon & Tue CLOSED</p>
+                        <p>Wednesday 10.00 - 24.00</p>
+                        <p>Thursday 10:00 - 24:00</p>
+                    </div>
+                    <div>
+                        <p>Friday 10:00 - 12:00</p>
+                        <p>Saturday 10:00 - 23:00</p>
+                        <p>Sunday Closed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <img style="filter: grayscale(75%);" src="../Images/map.jpg" alt="Map">
+
+        <div id="contact">
+            <div class="width--980">
+                <h1 class="text--center">CONTACT</h1>
+                <p>Find us at some address at some place or call us at 05050515-122330</p>
+                <p><span class="badge active">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+                <p class="fs--36"><b>Reserve</b> a table, ask for today's special or just send us a message:</p>
+
+                <form action="" method="POST">
+                    <input type="text" placeholder="Name" required>
+                    <input type="number" placeholder="How many people" required>
+                    <input type="datetime-local" value="2022-02-12T09:04" required>
+                    <input type="text" placeholder="Message \ Special requirements" required>
+                    <input type="submit" class="btn btn--width-full bg--light" value="SEND MESSAGE">
+                </form>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p class="footer__copyright">Powered by
+                <a href="https://github.com/LqhResearch" target="_blank">LqhResearch</a>
+            </p>
+        </footer>
+    </div>
+
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700;800&display=swap');
+:root {
+    --blue: #2196F3;
+    --grey: #757575;
+    --light: #f1f1f1;
+    --dark: #616161;
+    --hover: #ccc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Inconsolata', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+    background-color: #f7f5f2;
+}
+
+
+/* ---------------------------- Common class ---------------------------- */
+
+h5 {
+    font-family: 'Inconsolata', sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+p {
+    margin: 15px 0;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+input:not([type="submit"]) {
+    width: 100%;
+    font-family: inherit;
+    line-height: inherit;
+    font-size: inherit;
+    padding: 16px 8px;
+    margin-bottom: 16px;
+    border: 1px solid var(--hover);
+}
+
+.width--700 {
+    max-width: 700px;
+    margin: auto;
+}
+
+.btn {
+    background-color: transparent;
+    color: black;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    padding: 8px 16px;
+    border: none;
+    outline: none;
+    user-select: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--hover);
+    color: black;
+}
+
+.badge {
+    line-height: inherit;
+    font-size: inherit;
+    background-color: transparent;
+    color: black;
+    padding: 0 8px;
+    text-align: center;
+    display: inline-block;
+}
+
+.badge.active {
+    background-color: black;
+    color: white;
+}
+
+.bg--black {
+    background-color: black;
+    color: white;
+}
+
+.text--grey {
+    color: var(--grey);
+}
+
+.spacing--4 {
+    letter-spacing: 4px;
+}
+
+
+/* ---------------------------- Navbar ---------------------------- */
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: black;
+    font-size: 15px;
+    padding: 8px 16px;
+    display: flex;
+}
+
+.nav__item {
+    width: 25%;
+    color: white;
+}
+
+
+/* ---------------------------- Header ---------------------------- */
+
+.header {
+    position: relative;
+    min-height: 75vh;
+    font-size: 15px;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../../../Images/coffeehouse.jpg');
+    filter: grayscale(50%);
+}
+
+.header__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 90px;
+    color: white;
+    text-align: center;
+}
+
+.header__address {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: white;
+    padding: 12px 24px;
+}
+
+.header__time {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 12px 24px;
+}
+
+
+/* ---------------------------- About the cafe ---------------------------- */
+
+.about__head {
+    padding: 74px 0;
+    text-align: center;
+}
+
+.about__note {
+    background-color: var(--light);
+    padding: 0.18px 16px;
+    border-left: 6px solid #ccc;
+}
+
+#about img {
+    margin-top: 16px;
+    filter: grayscale(75%);
+}
+
+
+/* ---------------------------- The menu ---------------------------- */
+
+.menu__head {
+    padding: 58px 0;
+    text-align: center;
+}
+
+.tab {
+    padding: 8px 16px;
+    display: flex;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.tab__item {
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.tab__item.active {
+    background-color: var(--dark);
+    color: white;
+}
+
+.tab__panel {
+    padding: 48px 16px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    display: none;
+}
+
+.tab__panel.active {
+    display: block;
+}
+
+.tab__panel h4 {
+    font-weight: 400;
+}
+
+#menu img {
+    margin-top: 32px;
+    filter: grayscale(75%);
+}
+
+
+/* ---------------------------- Where find to us ---------------------------- */
+
+.where__head {
+    padding: 58px 0;
+    text-align: center;
+}
+
+#where img {
+    margin-top: 16px;
+    filter: grayscale(75%);
+}
+
+
+/* ---------------------------- Footer ---------------------------- */
+
+.footer {
+    background-color: var(--light);
+    margin-top: 48px;
+    padding: 48px;
+    text-align: center;
+}
+
+.footer__copyright a {
+    color: inherit;
+}
+
+.footer__copyright a:hover {
+    color: var(--blue);
+}
+
+
+/* ---------------------------- Responsive: Tablet ---------------------------- */
+
+@media screen and (max-width: 991.98px) {}
+
+
+/* ---------------------------- Responsive: Mobile ---------------------------- */
+
+@media screen and (max-width: 767.98px) {
+    /* Common class */
+    .grid--full-sm {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .hide--sm {
+        display: none;
+    }
+    .width--700 {
+        padding: 0 16px;
+    }
+}

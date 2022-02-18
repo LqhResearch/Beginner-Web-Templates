@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant modal template</title>
+    <link rel="icon" href="./assets/img/favicon.png">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Style -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="menu">
+            <div class="btn bg--black js__menu">Menu</div>
+            <div class="btn bg--black js__contact">Contact</div>
+        </div>
+        <div class="brand">Logo</div>
+        <div class="contact">
+            <p class="fs--24">Monday - friday 10-23 | saturday 14-02</p>
+            <p class="fs--18">42 village St, New York</p>
+            <p class="footer__copyright">Powered by
+                <a href="https://github.com/LqhResearch" target="_blank">LqhResearch</a>
+            </p>
+        </div>
+
+        <div class="menu-modal">
+            <div class="modal__content">
+                <div class="modal__head">
+                    <h1>Starters</h1>
+                </div>
+                <div class="modal__body">
+                    <h5>Tomato Soup <b>$2.50</b></h5>
+                    <h5>Chicken Salad <b>$3.50</b></h5>
+                    <h5>Bread and Butter <b>$1.00</b></h5>
+                </div>
+                <div class="modal__head">
+                    <h1>Main Courses</h1>
+                </div>
+                <div class="modal__body">
+                    <h5>Grilled Fish and Potatoes <b>$8.50</b></h5>
+                    <h5>Italian Pizza <b>$5.50</b></h5>
+                    <h5>Veggie Pasta <b>$4.00</b></h5>
+                    <h5>Chicken and Potatoes <b>$6.50</b></h5>
+                    <h5>Deluxe Burger <b>$5.00</b></h5>
+                </div>
+                <div class="modal__head">
+                    <h1>Desserts</h1>
+                </div>
+                <div class="modal__body">
+                    <h5>Fruit Salad <b>$2.50</b></h5>
+                    <h5>Ice cream <b>$2.00</b></h5>
+                    <h5>Chocolate Cake <b>$4.00</b></h5>
+                    <h5>Cheese <b>$5.50</b></h5>
+                </div>
+                <div class="btn modal__close">X</div>
+            </div>
+        </div>
+
+        <div class="contact-modal">
+            <div class="modal__content">
+                <div class="modal__head">
+                    <h1>Contact</h1>
+                </div>
+                <div class="modal__body">
+                    <p>Reserve a table, ask for today's special or just send us a message:</p>
+
+                    <form action="" method="POST">
+                        <input type="text" placeholder="Name" required>
+                        <input type="number" placeholder="How many people" required>
+                        <input type="datetime-local" value="2022-02-11T14:34" required>
+                        <input type="text" placeholder="Message \ Special requirements" required>
+                        <input style="margin-bottom: 16px;" type="submit" class="btn" value="SEND MESSAGE">
+                    </form>
+                </div>
+                <div class="btn modal__close">X</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

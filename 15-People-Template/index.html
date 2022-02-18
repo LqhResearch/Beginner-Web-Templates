@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People portfolio template</title>
+    <link rel="icon" href="./assets/img/favicon.png">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Style -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="header flex--between">
+            <div class="header__brand">SOME NAME</div>
+            <div class="btn"><i class="fas fa-bars"></i></div>
+        </div>
+
+        <div class="sidebar" title="close side menu">
+            <div class="sidebar__content">
+                <a class="btn bg--red">CLOSE</a>
+                <a class="btn bg--black" href="#portfolio">PORTFOLIO</a>
+                <a class="btn bg--black" href="#about">ABOUT</a>
+                <a class="btn bg--black" href="#contact">CONTACT</a>
+            </div>
+        </div>
+
+        <div id="portfolio">
+            <div class="grid--4 grid--full-sm">
+                <img onclick="onClick(this)" src="../Images/girl.jpg" alt="Canoeing again">
+                <img onclick="onClick(this)" src="../Images/girl_train.jpg" alt="A girl, and a train passing">
+                <img onclick="onClick(this)" src="../Images/man_bench.jpg" alt="Waiting for the bus in the desert">
+                <img onclick="onClick(this)" src="../Images/natureboy.jpg" alt="A boy surrounded by beautiful nature">
+
+                <img onclick="onClick(this)" src="../Images/boy.jpg" alt="Quiet day at the beach. Cold, but beautiful">
+                <img onclick="onClick(this)" src="../Images/man_bench.jpg" alt="Waiting for the bus in the desert">
+                <img onclick="onClick(this)" src="../Images/girl_mountain.jpg" alt="What a beautiful scenery this sunset">
+                <img onclick="onClick(this)" src="../Images/girl_train.jpg" alt="A girl, and a train passing">
+
+                <img onclick="onClick(this)" src="../Images/girl.jpg" alt="The Beach. Me. Alone. Beautiful">
+                <img onclick="onClick(this)" src="../Images/natureboy.jpg" alt="Nature again.. At its finest!">
+                <img onclick="onClick(this)" src="../Images/closegirl.jpg" alt="The Beach. Me. Alone. Beautiful">
+                <img onclick="onClick(this)" src="../Images/boy.jpg" alt="Quiet day at the beach. Cold, but beautiful">
+            </div>
+            <div class="pagination flex--center">
+                <div class="pagination__list">
+                    <div class="pagination__item">«</div>
+                    <div class="pagination__item active">1</div>
+                    <div class="pagination__item">2</div>
+                    <div class="pagination__item">3</div>
+                    <div class="pagination__item">4</div>
+                    <div class="pagination__item">»</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal">
+            <div class="modal__content">
+                <img class="modal__img" src="../Images/girl.jpg" alt="Girl">
+                <p class="text--center modal__desc">Canoeing again</p>
+            </div>
+            <div class="btn modal__close"><i class="fas fa-times"></i></div>
+        </div>
+
+        <div id="about">
+            <div class="width--600">
+                <h4 class="text--center"><b>About Me</b></h4>
+                <img src="../Images/avatar_hat.jpg" alt="Avatar hat">
+
+                <h4>My Name</h4>
+                <p class="text--justify">Some text about me. I love taking photos of PEOPLE. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                    ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                    id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Mail: example@example.com</p>
+                <p>Tel: 5353 35531</p>
+                <hr>
+
+                <div class="about__skills">
+                    <h4>Technical Skills</h4>
+                    <p class="letter--4">Photography</p>
+                    <div class="progress">
+                        <span class="progress__value" style="--progress-value: 95%;">95%</span>
+                    </div>
+                    <p class="letter--4">Web Design</p>
+                    <div class="progress">
+                        <span class="progress__value" style="--progress-value: 85%;">85%</span>
+                    </div>
+                    <p class="letter--4">Photoshop</p>
+                    <div class="progress">
+                        <span class="progress__value" style="--progress-value: 80%;">80%</span>
+                    </div>
+                    <div class="btn btn--lg btn--download bg--white"><i class="fas fa-download"></i> Download Resume</div>
+                </div>
+                <hr>
+
+                <h4>How much I charge</h4>
+                <div class="grid--2 grid--full-sm grid__gutter">
+                    <ul class="price__card">
+                        <li class="price__head">Basic</li>
+                        <li>Web Design</li>
+                        <li>Photography</li>
+                        <li>1GB Storage</li>
+                        <li>Mail Support</li>
+                        <li>
+                            <h2>$ 10</h2>
+                            <span class="opacity">per month</span>
+                        </li>
+                        <li class="price__footer flex--center">
+                            <div class="btn btn--lg bg--white">Sign Up</div>
+                        </li>
+                    </ul>
+                    <ul class="price__card">
+                        <li class="price__head">Premium</li>
+                        <li>Web Design</li>
+                        <li>Photography</li>
+                        <li>Unlimited Storage</li>
+                        <li>Endless Support</li>
+                        <li>
+                            <h2>$ 50</h2>
+                            <span class="opacity">per month</span>
+                        </li>
+                        <li class="price__footer flex--center">
+                            <div class="btn btn--lg bg--white">Sign Up</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact">
+            <div class="width--600">
+                <h4 class="text--center"><b>Contact Me</b></h4>
+                <p class="text--justify">Do you want me to photograph you? Fill out the form and fill me in with the details :) I love meeting new people!</p>
+
+                <p>Name <input type="text"></p>
+                <p>Email <input type="text"></p>
+                <p>Message <input type="text"></p>
+                <p>
+                    <div class="btn btn--width-full bg--black">Send Message</div>
+                </p>
+            </div>
+        </div>
+
+        <div class="grid--3 grid--full-sm grid__gutter bg--grey" style="padding: 32px;">
+            <div class="footer__item">
+                <h3>INFO</h3>
+                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            </div>
+
+            <div class="footer__item">
+                <h3>BLOG POSTS</h3>
+                <ul class="card__ul">
+                    <li class="card__li">
+                        <img src="../Images/workshop.jpg" alt="Workshop">
+                        <div>
+                            <span class="fs--18">Lorem</span>
+                            <br />
+                            <span>Sed mattis nunc</span>
+                        </div>
+                    </li>
+
+                    <li class="card__li">
+                        <img src="../Images/gondol.jpg" alt="Gondol">
+                        <div>
+                            <span class="fs--18">Ipsum</span>
+                            <br />
+                            <span>Praes tinci sed</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__item">
+                <h3>POPULAR TAGS</h3>
+                <div class="card__badges">
+                    <span class="badge active">Travel</span>
+                    <span class="badge">New York</span>
+                    <span class="badge">London</span>
+                    <span class="badge">IKEA</span>
+                    <span class="badge">NORWAY</span>
+                    <span class="badge">DIY</span>
+                    <span class="badge">Ideas</span>
+                    <span class="badge">Baby</span>
+                    <span class="badge">Family</span>
+                    <span class="badge">News</span>
+                    <span class="badge">Clothing</span>
+                    <span class="badge">Shopping</span>
+                    <span class="badge">Sports</span>
+                    <span class="badge">Games</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p class="footer__copyright">Powered by
+                <a href="https://github.com/LqhResearch" target="_blank">LqhResearch</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="./assets/js/app.js "></script>
+</body>
+
+</html>

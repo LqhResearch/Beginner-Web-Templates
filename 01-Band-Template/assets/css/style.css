@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+:root {
+    --red: #f44336;
+    --blue: #2196f3;
+    --green: #009688;
+    --light: #f7f7f7;
+    --dark: #757575;
+    --hover: #ccc;
+    --header-height: 46.5px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+
+/* ---------------------------- Common ---------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+p {
+    margin: 15px 0;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+input:not([type="submit"]) {
+    width: 100%;
+    font-family: inherit;
+    line-height: inherit;
+    font-size: inherit;
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid var(--hover);
+}
+
+.width--768 {
+    max-width: 768px;
+    margin: auto;
+}
+
+.flex--between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex--end {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.btn {
+    background-color: transparent;
+    color: black;
+    font-size: inherit;
+    line-height: inherit;
+    padding: 8px 16px;
+    border: none;
+    outline: none;
+    user-select: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--hover);
+    color: black;
+}
+
+.btn--width-full {
+    width: 100%;
+}
+
+.btn--size-lg {
+    padding: 16px;
+}
+
+.badge {
+    line-height: inherit;
+    font-size: inherit;
+    background-color: transparent;
+    color: black;
+    padding: 0 8px;
+    text-align: center;
+    display: inline-block;
+}
+
+.badge--circle {
+    border-radius: 50%;
+}
+
+.bg--red {
+    background-color: var(--red);
+    color: white;
+}
+
+.bg--green {
+    background-color: var(--green);
+    color: white;
+}
+
+.bg--black {
+    background-color: black;
+    color: white;
+}
+
+.text--white {
+    color: white;
+}
+
+.text--blue {
+    color: var(--blue);
+}
+
+.text--center {
+    text-align: center;
+}
+
+.text--justify {
+    text-align: justify;
+}
+
+.opacity {
+    opacity: 0.6;
+}
+
+.grid--2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid--3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid__gutter {
+    gap: 16px;
+}
+
+.pull--right {
+    float: right;
+}
+
+.section__group {
+    text-align: center;
+}
+
+.section__title {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.section__slogan {
+    font-style: italic;
+    opacity: 0.6;
+}
+
+
+/* ---------------------------- Header ---------------------------- */
+
+.header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: black;
+}
+
+.nav,
+.subnav {
+    display: flex;
+    list-style: none;
+}
+
+.nav__item,
+.subnav__item {
+    position: relative;
+}
+
+.nav__item:hover>.subnav {
+    display: flex;
+}
+
+.nav__link,
+.subnav__link {
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+.nav__link:hover,
+.subnav__link:hover {
+    background-color: var(--hover);
+    color: black;
+}
+
+.subnav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    min-width: 160px;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+    display: none;
+    list-style: none;
+    background-color: white;
+    flex-direction: column;
+}
+
+.subnav__link {
+    width: 100%;
+    color: black;
+    padding: 8px 16px;
+}
+
+.header__search-btn,
+.header__mobile-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    padding: 12px 24px;
+    cursor: pointer;
+}
+
+.header__mobile-btn {
+    display: none;
+}
+
+.header__search-btn:hover {
+    background-color: var(--red);
+}
+
+.header__mobile-btn:hover {
+    background-color: var(--hover);
+    color: black;
+}
+
+
+/* ---------------------------- Slider ---------------------------- */
+
+.slider {
+    color: white;
+    padding-top: var(--header-height);
+}
+
+.slider__item {
+    position: relative;
+    z-index: 0;
+    display: none;
+}
+
+.slider__desc {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 32px 0;
+    text-align: center;
+}
+
+
+/* ---------------------------- Content: The band ---------------------------- */
+
+#band {
+    padding: 64px 16px;
+}
+
+.band__member {
+    padding: 32px 0;
+}
+
+.band__img {
+    width: 60%;
+    margin: 0 20%;
+    border-radius: 4px;
+}
+
+
+/* ---------------------------- Content: Tour dates ---------------------------- */
+
+#tour {
+    padding: 64px 16px;
+    background-color: black;
+}
+
+.tour-date {
+    padding: 20px 0;
+}
+
+.tour-date__item {
+    background-color: white;
+    color: var(--dark);
+    padding: 8px 16px;
+    border-bottom: 1px solid var(--hover);
+}
+
+.tour-place {
+    padding: 16px 0;
+}
+
+.card__img:hover {
+    opacity: 0.6;
+}
+
+.card__body {
+    background-color: white;
+    padding: 0.24px 16px 16px;
+    display: block;
+}
+
+
+/* ---------------------------- Modal buy tickets ---------------------------- */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__content {
+    position: relative;
+    width: 900px;
+    margin: auto 8px;
+    background-color: white;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+    animation: zoom 0.4s;
+}
+
+@keyframes zoom {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.modal__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    font-size: 24px;
+    color: white;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.modal__close:hover {
+    background-color: var(--hover);
+    color: black;
+}
+
+.ticket__header {
+    background-color: var(--green);
+    color: white;
+}
+
+.ticket__title {
+    font-size: 30px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    padding: 42px;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.ticket__form {
+    background-color: white;
+    padding: 0.24px 16px;
+}
+
+.ticket__form input {
+    margin: 0;
+}
+
+
+/* ---------------------------- Content: Contact ---------------------------- */
+
+#contact {
+    padding: 64px 16px;
+}
+
+.contact__group {
+    padding: 32px 0;
+}
+
+.contact__info {
+    font-size: 18px;
+    padding-bottom: 16px;
+}
+
+.contact__info i {
+    width: 30px;
+}
+
+
+/* ---------------------------- Content: Map ---------------------------- */
+
+.map__img {
+    filter: grayscale(50%);
+}
+
+
+/* ---------------------------- Footer ---------------------------- */
+
+.footer {
+    background-color: var(--light);
+    padding: 64px;
+    text-align: center;
+    opacity: 0.6;
+}
+
+.footer__social {
+    font-size: 24px;
+}
+
+.footer__social i:hover {
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.footer__author {
+    color: inherit;
+}
+
+.footer__author:hover {
+    color: var(--blue);
+}
+
+
+/* ---------------------------- Responsive: Tablet ---------------------------- */
+
+@media screen and (max-width: 991.98px) {}
+
+
+/* ---------------------------- Responsive: Mobile ---------------------------- */
+
+@media screen and (max-width: 767.98px) {
+    /* Common class */
+    .grid--full-sm {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .hide--sm {
+        display: none;
+    }
+    /* Header */
+    .nav {
+        flex-direction: column;
+    }
+    .nav__close {
+        height: var(--header-height);
+        overflow: hidden;
+    }
+    .subnav {
+        min-width: 100%;
+    }
+    .header__mobile-btn {
+        display: block;
+    }
+}

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion template</title>
+    <link rel="icon" href="./assets/img/favicon.png">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Style -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar flex--between hide--sm">
+            <div>
+                <div class="btn"><i class="fab fa-facebook-square"></i></div>
+                <div class="btn"><i class="fab fa-instagram"></i></div>
+                <div class="btn"><i class="fab fa-snapchat"></i></div>
+                <div class="btn"><i class="fab fa-flickr"></i></div>
+                <div class="btn"><i class="fab fa-twitter"></i></div>
+                <div class="btn"><i class="fab fa-linkedin-in"></i></div>
+            </div>
+            <div class="btn"><i class="fas fa-search"></i></div>
+        </div>
+
+        <div class="header__top">
+            <h1 class="fs--48"><b>JANE BLOGLIFE</b></h1>
+            <h6>Welcome to the blog of
+                <div class="badge active">Jane's world</div>
+            </h6>
+        </div>
+
+        <div class="header__bottom">
+            <img src="../Images/jane.jpg" alt="Jane">
+            <div class="header__content">
+                <h1>Jane's</h1>
+                <h1 class="fs--64 hide--sm"><b>FASHION BLOG</b></h1>
+                <h6 onclick="subcribeForm()" class="btn header__subcribe-btn">SUBSCRIBE</h6>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="grid--8-4 grid--full-sm grid__gutter">
+                <div class="content__left">
+                    <div class="card">
+                        <div class="card__body padding">
+                            <h3 class="text--center">TITLE HEADING</h3>
+                            <h5 class="text--center">Title description,
+                                <span class="opacity">May 2, 2016</span>
+                            </h5>
+
+                            <img class="img__padding" src="../Images/girl_hat.jpg" alt="Girl hat">
+                            <p class="text--justify"><b>More Hats!</b> I am crazy about hats these days. Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus
+                                porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam
+                                non fringilla.</p>
+                            <p class="text--justify">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                            <div class="flex--between">
+                                <p class="btn btn__outline js__like">
+                                    <b><i class="fas fa-thumbs-up"></i> Like</b>
+                                </p>
+                                <p class="btn js__replies">
+                                    <b>Replies <span class="badge">1</span></b>
+                                </p>
+                            </div>
+
+                            <div class="card__comments" style="display: block;">
+                                <hr>
+                                <div class="grid--2-10 grid--auto">
+                                    <img style="width: 90px;" src="../Images/avatar_smoke.jpg" alt="Avatar smoke">
+                                    <div>
+                                        <h4>George <span class="fs--15 opacity">May 3, 2015, 6:32 PM</span></h4>
+                                        <p>Great blog post! Following</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="card">
+                        <div class="card__body padding">
+                            <h3 class="text--center">TITLE HEADING</h3>
+                            <h5 class="text--center">Title description,
+                                <span class="opacity">April 23, 2016</span>
+                            </h5>
+
+                            <img class="img__padding" src="../Images/man_hat.jpg" alt="Man hat">
+                            <p class="text--justify"><b>Hats!</b> The trend this summer is hats for men!</p>
+                            <p class="text--justify">Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at.
+                                Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                            <div class="flex--between">
+                                <p class="btn btn__outline js__like">
+                                    <b><i class="fas fa-thumbs-up"></i> Like</b>
+                                </p>
+                                <p class="btn js__replies">
+                                    <b>Replies <span class="badge">2</span></b>
+                                </p>
+                            </div>
+
+                            <div class="card__comments" style="display: none;">
+                                <hr>
+                                <div class="grid--2-10 grid--auto">
+                                    <img style="width: 90px;" src="../Images/girl_train.jpg" alt="Girl train">
+                                    <div>
+                                        <h4>Amber <span class="fs--15 opacity">April 26, 2015, 10:52 PM</span></h4>
+                                        <p>Love your blog page! Simply the best! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                </div>
+                                <div class="grid--2-10 grid--auto">
+                                    <img style="width: 90px;" src="../Images/girl.jpg" alt="Girl">
+                                    <div>
+                                        <h4>Angie <span class="fs--15 opacity">April 23, 2015, 9:12 PM</span></h4>
+                                        <p>Love hats!!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="card">
+                        <div class="card__body padding">
+                            <h3 class="text--center">TITLE HEADING</h3>
+                            <h5 class="text--center">Title description,
+                                <span class="opacity">April 7, 2016</span>
+                            </h5>
+
+                            <img class="img__padding" src="../Images/runway.jpg" alt="Runway">
+                            <p class="text--justify"><b>Dont miss!</b> The runway in New York City this weekend is gonna be legendary!</p>
+                            <p class="text--justify">Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at.
+                                Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                            <div class="flex--between">
+                                <p class="btn btn__outline js__like">
+                                    <b><i class="fas fa-thumbs-up"></i> Like</b>
+                                </p>
+                                <p class="btn js__replies">
+                                    <b>Replies <span class="badge">3</span></b>
+                                </p>
+                            </div>
+
+                            <div class="card__comments" style="display: none;">
+                                <hr>
+                                <div class="grid--2-10 grid--auto">
+                                    <img style="width: 90px;" src="../Images/girl_mountain.jpg" alt="Girl mountain">
+                                    <div>
+                                        <h4>Jane <span class="fs--15 opacity">April 10, 2015, 7:22 PM</span></h4>
+                                        <p>That was a great runway show! Thanks for everything.</p>
+                                    </div>
+                                </div>
+                                <div class="grid--2-10 grid--auto">
+                                    <img style="width: 90px;" src="../Images/boy.jpg" alt="Boy">
+                                    <div>
+                                        <h4>John <span class="fs--15 opacity">April 8, 2015, 10:32 PM</span></h4>
+                                        <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                                <div class="grid--2-10 grid--auto">
+                                    <img style="width: 90px;" src="../Images/girl_hood.jpg" alt="Girl hood">
+                                    <div>
+                                        <h4>Anja <span class="fs--15 opacity">April 7, 2015, 9:12 PM</span></h4>
+                                        <p>Cant wait for the runway to start!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content__right">
+                    <div class="card">
+                        <img src="../Images/avatar_girl2.jpg" alt="Avatar girl">
+                        <div class="card__body bg--black">
+                            <h4>My Name</h4>
+                            <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="card">
+                        <div class="card__head bg--black">
+                            <h4>Popular Posts</h4>
+                        </div>
+
+                        <ul class="card__ul">
+                            <li class="card__li">
+                                <img src="../Images/avatar_smoke.jpg" alt="Avatar smoke">
+                                <div>
+                                    <span class="fs--18">Denim</span>
+                                    <br />
+                                    <span>Sed mattis nunc</span>
+                                </div>
+                            </li>
+                            <li class="card__li">
+                                <img src="../Images/bandmember.jpg" alt="Bandmember">
+                                <div>
+                                    <span class="fs--18">Sweaters</span>
+                                    <br />
+                                    <span>Praes tinci sed</span>
+                                </div>
+                            </li>
+
+                            <li class="card__li">
+                                <img src="../Images/workshop.jpg" alt="Workshop">
+                                <div>
+                                    <span class="fs--18">Workshop</span>
+                                    <br />
+                                    <span>Ultricies congue</span>
+                                </div>
+                            </li>
+
+                            <li class="card__li">
+                                <img src="../Images/avatar_smoke.jpg" alt="Avatar smoke">
+                                <div>
+                                    <span class="fs--18">Trends</span>
+                                    <br />
+                                    <span>Lorem ipsum dipsum</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <hr>
+
+                    <div class="card">
+                        <div class="card__head bg--black">
+                            <h4>Advertise</h4>
+                        </div>
+                        <div class="card__body card__ad">
+                            <div class="flex--center">
+                                <span>Your AD Here</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="card">
+                        <div class="card__head bg--black">
+                            <h4>Tags</h4>
+                        </div>
+                        <div class="card__body padding--16">
+                            <span class="badge active">Fashion</span>
+                            <span class="badge">New York</span>
+                            <span class="badge">London</span>
+                            <span class="badge">Hats</span>
+                            <span class="badge">NORWAY</span>
+                            <span class="badge">Sweaters</span>
+                            <span class="badge">Ideas</span>
+                            <span class="badge">Deals</span>
+                            <span class="badge">Accessories</span>
+                            <span class="badge">News</span>
+                            <span class="badge">Clothing</span>
+                            <span class="badge">Shopping</span>
+                            <span class="badge">Jeans</span>
+                            <span class="badge">Trends</span>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="card">
+                        <div class="card__head bg--black">
+                            <h4>Advertise</h4>
+                        </div>
+                        <div class="card__body padding--16">
+                            <div class="grid--2 grid__gutter-sm">
+                                <img src="../Images/jeans.jpg" alt="Jeans">
+                                <img src="../Images/avatar_hat.jpg" alt="Avatar hat">
+                                <img src="../Images/team1.jpg" alt="Team 1">
+                                <img src="../Images/team4.jpg" alt="Team 4">
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="card">
+                        <div class="card__head bg--black">
+                            <h4>Follow Me</h4>
+                        </div>
+                        <div class="card__body card__follow">
+                            <i class="fab fa-facebook-square"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-snapchat"></i>
+                            <i class="fab fa-pinterest-p"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="card">
+                        <div class="card__head bg--black">
+                            <h4>Subscribe</h4>
+                        </div>
+                        <div class="card__body">
+                            <p>Enter your e-mail below and get notified on the latest blog posts.</p>
+                            <p><input type="email" placeholder="Enter e-mail"></p>
+                            <p><input onclick="subcribeForm()" class="btn btn--width-full bg--red" type="submit" value="Subscribe"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal">
+            <div class="modal__content">
+                <h2 class="spacing--4">SUBSCRIBE</h2>
+                <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
+                <p><input type="email" placeholder="Enter e-mail"></p>
+                <p><input class="btn btn--width-full bg--red" type="submit" value="Subscribe"></p>
+                <div class="btn modal__close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="btn js__back-top">
+                <i class="fas fa-arrow-up"></i> To the top
+            </div>
+
+            <p class="footer__copyright">Powered by
+                <a href="https://github.com/LqhResearch" target="_blank">LqhResearch</a>
+            </p>
+        </footer>
+    </div>
+
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

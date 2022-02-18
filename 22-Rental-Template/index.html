@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental template</title>
+    <link rel="icon" href="./assets/img/favicon.png">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Style -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="header__mobile">
+            <div class="btn bg--black">Rental</div>
+            <div onclick="toggleSlidebar()" class="btn bg--black">
+                <i style="margin: 0; line-height: 1.5;" class="fas fa-bars"></i>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="padding--16">
+                <h3>Rental</h3>
+                <h3>from $99</h3>
+                <h6>per night</h6>
+                <hr>
+                <form action="" method="POST">
+                    <p><i class="fas fa-calendar-check"></i> Check in</p>
+                    <input type="text" placeholder="DD MM YYYY">
+                    <p><i class="fas fa-calendar"></i> Check out</p>
+                    <input type="text" placeholder="DD MM YYYY">
+                    <p><i class="fas fa-male"></i> Adults</p>
+                    <input type="number" value="1">
+                    <p><i class="fas fa-child"></i> Child</p>
+                    <input type="number" value="0">
+
+                    <p>
+                        <div class="btn btn--width-full bg--green">
+                            <i class="fas fa-search"></i> Search availability
+                        </div>
+                    </p>
+                </form>
+            </div>
+            <div class="btn btn--width-full padding--16 text--left">
+                <i class="fas fa-building"></i> Apartment
+            </div>
+            <div class="btn btn--width-full padding--16 text--left">
+                <i class="fas fa-rss"></i> Subscribe
+            </div>
+            <div class="btn btn--width-full padding--16 text--left">
+                <i class="fas fa-envelope"></i> Contact
+            </div>
+        </div>
+
+        <div class="content">
+            <h2 class="text--green">The Apartment</h2>
+
+            <div class="slider">
+                <div class="slider__show">
+                    <img src="../Images/livingroom.jpg" alt="Living Room">
+                    <span class="slider__name">Living Room</span>
+                </div>
+
+                <div class="slider__list grid--4 grid__gutter">
+                    <img class="active" src="../Images/livingroom.jpg" alt="Living Room">
+                    <img src="../Images/diningroom.jpg" alt="Dining Room">
+                    <img src="../Images/bedroom.jpg" alt="Bedroom">
+                    <img src="../Images/livingroom2.jpg" alt="Living Room II">
+                </div>
+            </div>
+
+            <h4><b>The space</b></h4>
+            <div class="grid--2 fs--18">
+                <div>
+                    <p><i class="fas fa-male fa-fw"></i> Max people: 4</p>
+                    <p><i class="fas fa-bath fa-fw"></i> Bathrooms: 2</p>
+                    <p><i class="fas fa-bed fa-fw"></i> Bedrooms: 1</p>
+                </div>
+                <div>
+                    <p><i class="fas fa-clock fa-fw"></i> Check In: After 3PM</p>
+                    <p><i class="fas fa-clock fa-fw"></i> Check Out: 12PM</p>
+                </div>
+            </div>
+
+            <hr>
+
+            <h4><b>Amenities</b></h4>
+            <div class="grid--2 fs--18">
+                <div>
+                    <p><i class="fas fa-shower fa-fw"></i> Shower</p>
+                    <p><i class="fas fa-wifi fa-fw"></i> WiFi</p>
+                    <p><i class="fas fa-tv fa-fw"></i> TV</p>
+                </div>
+                <div>
+                    <p><i class="fas fa-utensils fa-fw"></i> Kitchen</p>
+                    <p><i class="fas fa-thermometer-full fa-fw"></i> Heating</p>
+                    <p><i class="fas fa-wheelchair fa-fw"></i> Accessible</p>
+                </div>
+            </div>
+
+            <hr>
+
+            <h4><b>Extra Info</b></h4>
+            <p>Our apartment is really clean and we like to keep it that way. Enjoy the lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>
+                We accept:
+                <i class="fas fa-credit-card"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-amex"></i>
+                <i class="fab fa-cc-paypal"></i>
+            </p>
+
+            <hr>
+
+            <h4><b>Rules</b></h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Subscribe to receive updates on available dates and special offers.</p>
+            <div class="grid--3 grid--full-sm">
+                <button class="btn btn--width-full bg--green">Subscribe</button>
+            </div>
+
+            <hr>
+
+            <h2>Contact</h2>
+            <span>
+                <i class="fas fa-map-marker-alt fa-fw"></i>Chicago, US <br/>
+                <i class="fas fa-phone-alt fa-fw"></i> Phone: +00 151515 <br/>
+                <i class="fas fa-envelope fa-fw"></i> Email: mail@mail.com
+            </span>
+            <p>Questions? Go ahead, ask them:</p>
+            <form action="" method="POST">
+                <p><input type="text" placeholder="Name"></p>
+                <p><input type="text" placeholder="Email"></p>
+                <p><input type="text" placeholder="Message"></p>
+                <div class="grid--3 grid--full-sm">
+                    <button class="btn btn--width-full bg--green">Send a Message</button>
+                </div>
+            </form>
+
+            <footer class="footer">
+                <p class="footer__copyright">Powered by
+                    <a href="https://github.com/LqhResearch" target="_blank">LqhResearch</a>
+                </p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

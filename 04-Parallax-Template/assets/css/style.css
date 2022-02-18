@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+:root {
+    --red: #f44336;
+    --blue: #2196f3;
+    --light: #f1f1f1;
+    --dark: #616161;
+    --text: #777777;
+    --hover: #ccc;
+    --height-nav: 43px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--text);
+    scroll-behavior: smooth;
+}
+
+
+/* ---------------------------- Common ---------------------------- */
+
+h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    margin: 15px 0;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.btn {
+    background-color: transparent;
+    color: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    padding: 8px 16px;
+    border: none;
+    outline: none;
+    user-select: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--hover);
+    color: black;
+}
+
+.btn--width-full {
+    width: 100%;
+}
+
+.progress {
+    position: relative;
+    width: 100%;
+    height: 35px;
+    background-color: var(--light);
+}
+
+.progress__value {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    width: var(--progress-value);
+    background-color: var(--dark);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fs--18 {
+    font-size: 18px;
+}
+
+.fs--24 {
+    font-size: 24px;
+}
+
+.padding {
+    padding: 12px 24px;
+}
+
+.bg--black {
+    background-color: black;
+    color: white;
+}
+
+.text--center {
+    text-align: center;
+}
+
+.text--justify {
+    text-align: justify;
+}
+
+.spacing--10 {
+    letter-spacing: 10px;
+}
+
+.flex--center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex--between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex--end {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.grid--2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid--4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--4-8 {
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+}
+
+.grid__gutter {
+    gap: 16px;
+}
+
+.hide--lg {
+    display: none;
+}
+
+
+/* ---------------------------- Header top ---------------------------- */
+
+.main {
+    position: relative;
+}
+
+.header--top {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.header--float {
+    background-color: white;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    animation: animateTop 0.4s;
+}
+
+.header--float .btn {
+    color: black;
+}
+
+@keyframes animateTop {
+    0% {
+        top: -300px;
+        opacity: 0;
+    }
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+}
+
+.nav__mobile {
+    display: none;
+}
+
+.js__mobile-nav {
+    position: absolute;
+    top: var(--height-nav);
+    left: 0;
+    right: 0;
+    background-color: white;
+    display: block;
+}
+
+.js__mobile-nav .btn {
+    text-align: left;
+}
+
+
+/* ---------------------------- Header bottom ---------------------------- */
+
+.header--bottom {
+    background: center / cover no-repeat url("../../../Images/parallax1.jpg");
+    height: 400px;
+    line-height: 1.2;
+    opacity: 0.75;
+}
+
+.header__title {
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    padding: 12px 24px;
+    letter-spacing: 10px;
+}
+
+.js__mobile-btn {
+    height: var(--height-nav);
+    align-items: center;
+}
+
+.js__mobile-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+
+/* ---------------------------- About ---------------------------- */
+
+#about,
+#portfolio,
+#contact {
+    max-width: 980px;
+    padding: 64px 16px;
+    margin: auto;
+}
+
+.about__img {
+    border-radius: 4px;
+    opacity: 0.6;
+}
+
+.about__img:hover {
+    opacity: 1;
+}
+
+.about__job {
+    font-size: 18px;
+    padding: 18px 0;
+    text-align: center;
+}
+
+.about__info {
+    background-color: var(--dark);
+    color: white;
+    padding: 32px 0;
+    text-align: center;
+}
+
+
+/* ---------------------------- Portfolio ---------------------------- */
+
+.portfolio {
+    background: center / cover no-repeat url("../../../Images/parallax2.jpg");
+    height: 400px;
+    opacity: 0.75;
+}
+
+.portfolio__title {
+    color: white;
+    font-size: 36px;
+    letter-spacing: 10px;
+}
+
+.portfolio__img:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.portfolio__btn {
+    padding: 12px 24px;
+    margin-top: 64px;
+    background-color: var(--light);
+}
+
+
+/* ---------------------------- Modal ---------------------------- */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: black;
+    color: white;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    color: white;
+}
+
+.modal__close i {
+    font-size: 18px;
+}
+
+.modal__content {
+    animation: zooms 0.6s;
+}
+
+.modal__img {
+    width: 400px;
+    height: 300px;
+}
+
+@keyframes zooms {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* ---------------------------- Contact ---------------------------- */
+
+.contact {
+    background: center / cover no-repeat url("../../../Images/parallax3.jpg");
+    height: 400px;
+    opacity: 0.75;
+}
+
+.contact__title {
+    color: white;
+    font-size: 36px;
+    letter-spacing: 10px;
+}
+
+.contact__info i {
+    font-size: 20px;
+    margin-right: 16px;
+}
+
+.contact__info i:hover {
+    color: black;
+}
+
+input:not([type="submit"]) {
+    width: 100%;
+    line-height: inherit;
+    font-size: inherit;
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid var(--hover);
+}
+
+
+/* ---------------------------- Footer ---------------------------- */
+
+.footer {
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    padding: 64px;
+    text-align: center;
+    opacity: 0.6;
+}
+
+.footer:hover {
+    opacity: 1;
+}
+
+.js__back-top {
+    font-size: 15px;
+    background-color: var(--light);
+    color: black;
+    margin-bottom: 24px;
+    padding: 10px 24px;
+    display: inline-block;
+}
+
+.footer .footer__social i:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.footer__copyright {
+    font-size: 15px;
+}
+
+.footer__copyright a {
+    color: inherit;
+}
+
+.footer__copyright a:hover {
+    color: var(--blue);
+}
+
+
+/* ---------------------------- Responsive: Tablet ---------------------------- */
+
+@media screen and (max-width: 991.98px) {}
+
+
+/* ---------------------------- Responsive: Mobile ---------------------------- */
+
+@media screen and (max-width: 767.98px) {
+    /* Common class */
+    .grid--full-sm {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .hide--sm {
+        display: none;
+    }
+    .hide--lg {
+        display: flex;
+    }
+    /* Navbar */
+    .header--close .nav {
+        height: var(--height-nav);
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .js__mobile-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}

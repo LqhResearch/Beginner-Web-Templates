@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap');
+:root {
+    --red: #f44336;
+    --blue: #2196f3;
+    --grey: #9e9e9e;
+    --light: #f1f1f1;
+    --dark: #616161;
+    --hover: #ccc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+    scroll-behavior: smooth;
+}
+
+
+/* ---------------------------- Common ---------------------------- */
+
+h1,
+h2,
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    margin: 15px 0;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+input:not([type="submit"]) {
+    width: 100%;
+    font-family: inherit;
+    line-height: inherit;
+    font-size: inherit;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid var(--hover);
+}
+
+.btn {
+    background-color: transparent;
+    color: black;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    padding: 8px 16px;
+    border: none;
+    outline: none;
+    user-select: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--hover);
+    color: black;
+}
+
+.btn--width-full {
+    width: 100%;
+}
+
+.btn i {
+    list-style: inherit;
+    margin-right: 4px;
+}
+
+.btn--lg {
+    padding: 12px 24px;
+}
+
+.progress {
+    position: relative;
+    width: 100%;
+    height: 28px;
+    background-color: var(--grey);
+}
+
+.progress__value {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    width: var(--progress-value);
+    background-color: var(--dark);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.opacity {
+    opacity: 0.6;
+}
+
+.fs--18 {
+    font-size: 18px;
+}
+
+.fs--36 {
+    font-size: 36px;
+}
+
+.fs--64 {
+    font-size: 64px;
+}
+
+.round {
+    border-radius: 8px;
+}
+
+.bg--black {
+    background-color: black;
+    color: white;
+}
+
+.bg--white {
+    background-color: white;
+    color: black;
+}
+
+.bg--light {
+    background-color: var(--light);
+    color: black;
+}
+
+.text--center {
+    text-align: center;
+}
+
+.spacing--4 {
+    letter-spacing: 4px;
+}
+
+.hide--lg {
+    display: none;
+}
+
+.flex--between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.grid--2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid__gutter {
+    gap: 16px;
+}
+
+
+/* ---------------------------- Navbar ---------------------------- */
+
+.main {
+    position: relative;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: white;
+    color: black;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.navbar .btn {
+    padding: 16px;
+}
+
+
+/* ---------------------------- Header ---------------------------- */
+
+.header {
+    position: relative;
+    height: 100vh;
+    background: center / cover no-repeat url("../../../Images/mac.jpg");
+    filter: grayscale(50%);
+}
+
+.header__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 395px;
+    color: white;
+    margin: auto;
+    padding: 48px;
+}
+
+.header__socials {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 18px;
+    color: white;
+    padding: 24px 48px;
+    opacity: 0.6;
+}
+
+.header__socials i:hover {
+    opacity: 0.6;
+}
+
+.mobile__nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    width: 200px;
+    background-color: black;
+    display: none;
+}
+
+
+/* ---------------------------- About ---------------------------- */
+
+#about {
+    padding: 128px 32px;
+    text-align: center;
+}
+
+.about__bottom {
+    background-color: var(--light);
+    padding: 128px 32px;
+}
+
+
+/* ---------------------------- Team ---------------------------- */
+
+#team {
+    padding: 128px 32px;
+}
+
+.card {
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    filter: grayscale(75%);
+}
+
+.card__body {
+    padding: 0.18px 16px;
+}
+
+.banner {
+    background-color: var(--dark);
+    color: white;
+    padding: 48px 16px;
+    text-align: center;
+}
+
+
+/* ---------------------------- Work ---------------------------- */
+
+#work {
+    padding: 128px 32px;
+    text-align: center;
+}
+
+#work img:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+
+/* ---------------------------- Modal images ---------------------------- */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: black;
+    color: white;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__content {
+    position: relative;
+    width: 300px;
+    margin: auto 8px;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+    animation: zoom 0.4s;
+}
+
+@keyframes zoom {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.modal__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    font-size: 24px;
+    color: white;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+
+/* ---------------------------- Skill ---------------------------- */
+
+.skill {
+    background-color: var(--light);
+    padding: 64px 32px;
+}
+
+
+/* ---------------------------- Pricing ---------------------------- */
+
+#pricing {
+    background-color: var(--dark);
+    color: white;
+    padding: 128px 32px;
+    text-align: center;
+}
+
+
+/* ---------------------------- Price card ---------------------------- */
+
+.price__card {
+    text-align: center;
+    list-style: none;
+}
+
+.price__card:hover {
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.price__card li {
+    background-color: white;
+    color: black;
+    padding: 16px;
+    border-bottom: 1px solid var(--hover);
+}
+
+.price__head {
+    background-color: black !important;
+    color: white !important;
+    font-size: 24px;
+    padding: 32px !important;
+}
+
+.price__head.active {
+    background-color: var(--red) !important;
+    padding: 48px 16px !important;
+}
+
+.price__footer {
+    background-color: var(--light) !important;
+    padding: 24px !important;
+}
+
+
+/* ---------------------------- Contact ---------------------------- */
+
+#contact {
+    background-color: var(--light);
+    padding: 64px 32px;
+}
+
+.contact__info {
+    margin-top: 48px;
+}
+
+.contact__info i {
+    margin-right: 16px;
+}
+
+.contact__img {
+    filter: grayscale(75%);
+    padding: 48px 0;
+}
+
+
+/* ---------------------------- Footer ---------------------------- */
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 64px;
+    text-align: center;
+}
+
+.footer__social {
+    font-size: 24px;
+}
+
+.footer__social i:hover {
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.footer__copyright a {
+    color: inherit;
+}
+
+.footer__copyright a:hover {
+    color: var(--blue);
+}
+
+
+/* ---------------------------- Responsive: Tablet ---------------------------- */
+
+@media screen and (max-width: 991.98px) {}
+
+
+/* ---------------------------- Responsive: Mobile ---------------------------- */
+
+@media screen and (max-width: 767.98px) {
+    /* Common class */
+    .grid--full-sm {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .hide--sm {
+        display: none;
+    }
+    .hide--lg {
+        display: flex;
+    }
+    .fs--36-sm {
+        font-size: 36px;
+    }
+    /* Navbar */
+    .mobile__nav--show {
+        display: block;
+    }
+}

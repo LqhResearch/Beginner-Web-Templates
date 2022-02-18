@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Oswald:wght@300;400;500;600;700&display=swap');
+:root {
+    --red: #f44336;
+    --blue: #2196F3;
+    --light: #f1f1f1;
+    --dark: #616161;
+    --hover: #ccc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+
+/* ---------------------------- Common ---------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+}
+
+p {
+    margin: 15px 0;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+img.img__padding {
+    padding: 16px 0;
+}
+
+b {
+    font-weight: 600;
+}
+
+input:not([type="submit"]) {
+    width: 100%;
+    font-family: inherit;
+    line-height: inherit;
+    font-size: inherit;
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid var(--hover);
+}
+
+.btn {
+    background-color: transparent;
+    color: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    padding: 8px 16px;
+    border: none;
+    outline: none;
+    user-select: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn i {
+    line-height: inherit;
+}
+
+.btn__outline {
+    border: 1px solid #ccc;
+}
+
+.btn--width-full {
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: var(--hover);
+    color: black;
+}
+
+.badge {
+    line-height: inherit;
+    font-size: inherit;
+    background-color: transparent;
+    color: black;
+    padding: 0.18px 8px;
+    text-align: center;
+    display: inline-block;
+}
+
+.badge.active {
+    background-color: black;
+    color: white;
+}
+
+.fs--15 {
+    font-size: 15px;
+}
+
+.fs--18 {
+    font-size: 18px;
+}
+
+.fs--24 {
+    font-size: 24px;
+}
+
+.fs--48 {
+    font-size: 48px;
+}
+
+.fs--64 {
+    font-size: 64px;
+}
+
+.bg--red {
+    background-color: var(--red);
+    color: white;
+}
+
+.bg--black {
+    background-color: black !important;
+    color: white;
+}
+
+.padding--16 {
+    padding: 16px !important;
+}
+
+.text--center {
+    text-align: center;
+}
+
+.text--justify {
+    text-align: justify;
+}
+
+.spacing--4 {
+    letter-spacing: 4px;
+}
+
+.opacity {
+    opacity: 0.6;
+}
+
+.flex--center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex--between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.grid--2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid--8-4 {
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+}
+
+.grid--2-10 {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+
+.grid__gutter-sm {
+    gap: 16px;
+}
+
+.grid__gutter {
+    gap: 32px;
+}
+
+
+/* ---------------------------- Navbar ---------------------------- */
+
+.navbar {
+    background-color: black;
+    color: white;
+}
+
+
+/* ---------------------------- Header ---------------------------- */
+
+.header__top {
+    padding: 48px 16px;
+    text-align: center;
+}
+
+.header__bottom {
+    position: relative;
+    color: white;
+    letter-spacing: 4px;
+}
+
+.header__content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 1;
+    padding: 12px 24px;
+}
+
+.header__subcribe-btn {
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    padding: 12px 24px;
+    letter-spacing: 0;
+    opacity: 0.6;
+}
+
+.header__subcribe-btn:hover {
+    opacity: 1;
+}
+
+
+/* ---------------------------- Content ---------------------------- */
+
+.content {
+    background-color: var(--light);
+    padding: 24px 32px;
+}
+
+.card__head {
+    padding: 8px 16px;
+}
+
+.card__body {
+    background-color: white;
+    padding: 0.24px 16px;
+}
+
+.card__body.padding {
+    padding: 12px 24px;
+}
+
+.card__ul {
+    list-style: none;
+}
+
+.card__li {
+    background-color: white;
+    padding: 16px;
+    border-bottom: 1px solid var(--hover);
+    display: flex;
+    align-items: flex-start;
+}
+
+.card__li:hover {
+    background-color: var(--hover);
+    cursor: pointer;
+}
+
+.card__li img {
+    width: 50px;
+    margin-right: 16px;
+}
+
+.card__body .badge:not(.active) {
+    background-color: var(--light);
+    font-size: 12px;
+}
+
+.card__body .badge {
+    margin-bottom: 16px;
+}
+
+.card__body .js__replies .badge {
+    font-size: 15px;
+    margin: 0;
+}
+
+.js__replies {
+    background-color: black;
+    color: white;
+}
+
+.card__comments .grid--2-10 {
+    margin-bottom: 16px;
+}
+
+.card__ad {
+    padding: 16px;
+}
+
+.card__ad>div {
+    height: 200px;
+    background-color: var(--light);
+}
+
+.card__follow {
+    padding: 8px 16px;
+    font-size: 24px;
+}
+
+.card__follow i:hover {
+    opacity: 0.6;
+}
+
+
+/* ---------------------------- Subscribe modal ---------------------------- */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__content {
+    position: relative;
+    width: 900px;
+    margin: auto 16px;
+    padding: 32px 42px;
+    background-color: white;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+    animation: animateOpacity 0.4s;
+}
+
+@keyframes animateOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.modal__close {
+    position: absolute;
+    top: 32px;
+    right: 42px;
+    z-index: 1;
+    font-size: 24px;
+    background-color: white;
+    color: black;
+}
+
+
+/* ---------------------------- Footer ---------------------------- */
+
+.footer {
+    background-color: var(--dark);
+    padding: 32px;
+}
+
+.js__back-top {
+    background-color: black;
+    color: white;
+    padding: 12px 24px;
+}
+
+.footer__copyright,
+.footer__copyright a {
+    color: inherit;
+}
+
+.footer__copyright a:hover {
+    color: var(--blue);
+}
+
+
+/* ---------------------------- Responsive: Tablet ---------------------------- */
+
+@media screen and (max-width: 991.98px) {}
+
+
+/* ---------------------------- Responsive: Mobile ---------------------------- */
+
+@media screen and (max-width: 767.98px) {
+    /* Common class */
+    .grid--full-sm {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .grid--auto {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .hide--sm {
+        display: none;
+    }
+}

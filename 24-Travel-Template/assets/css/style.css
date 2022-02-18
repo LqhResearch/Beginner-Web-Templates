@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap');
+:root {
+    --red: #f44336;
+    --blue: #2196f3;
+    --green: #4CAF50;
+    --orange: #ff5722;
+    --light: #f1f1f1;
+    --dark: #616161;
+    --hover: #ccc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+
+/* ---------------------------- Common ---------------------------- */
+
+h2,
+h3,
+h5,
+h6 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+p {
+    margin: 15px 0;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+b {
+    font-weight: 600;
+}
+
+i {
+    line-height: inherit;
+    font-size: inherit;
+}
+
+input:not([type="submit"]) {
+    width: 100%;
+    font-family: inherit;
+    line-height: inherit;
+    font-size: inherit;
+    padding: 8px;
+    border: 1px solid var(--hover);
+}
+
+.fas {
+    line-height: inherit;
+}
+
+.btn {
+    background-color: transparent;
+    color: black;
+    font-size: inherit;
+    line-height: inherit;
+    padding: 8px 16px;
+    border: none;
+    outline: none;
+    user-select: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--hover);
+    color: black;
+}
+
+.btn--lg {
+    padding: 12px 24px;
+}
+
+.btn i {
+    margin-right: 16px;
+}
+
+.badge {
+    line-height: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    background-color: transparent;
+    color: black;
+    padding: 0 8px;
+    text-align: center;
+    display: inline-block;
+}
+
+.bg--red,
+.hover--red:hover {
+    background-color: var(--red);
+    color: white;
+}
+
+.bg--orange {
+    background-color: var(--orange);
+    color: white;
+}
+
+.bg--black {
+    background-color: black;
+    color: white;
+}
+
+.bg--dark {
+    background-color: var(--dark);
+    color: white;
+}
+
+.text--red {
+    color: var(--red);
+}
+
+.opacity {
+    opacity: 0.6;
+}
+
+.flex--between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.grid--2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid__gutter {
+    gap: 16px;
+}
+
+
+/* ---------------------------- Header ---------------------------- */
+
+.main {
+    position: relative;
+    background-color: var(--light);
+}
+
+.nav {
+    font-size: 24px;
+    background-color: white;
+    border-bottom: 1px solid var(--hover);
+}
+
+.header {
+    position: relative;
+}
+
+.header__tab {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 65%;
+}
+
+.tab {
+    background-color: black;
+    display: flex;
+}
+
+.tab__item {
+    background-color: black;
+    color: white;
+}
+
+.tab__item.active {
+    background-color: var(--red);
+    color: white;
+}
+
+.tab__panel {
+    background-color: white;
+    padding: 16px;
+    display: none;
+}
+
+.tab__panel.active {
+    display: block;
+}
+
+.tab__panel h4 {
+    font-weight: 400;
+}
+
+
+/* ---------------------------- Content ---------------------------- */
+
+.content {
+    max-width: 1100px;
+    margin: auto;
+    padding: 16px;
+}
+
+.hotel__place {
+    position: relative;
+}
+
+.hotel__place--name {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    font-size: 18px;
+    color: white;
+    padding: 8px 16px;
+}
+
+
+/* ---------------------------- Card ---------------------------- */
+
+.card__body {
+    background-color: white;
+    padding: 0.18px 16px;
+    display: block;
+}
+
+
+/* ---------------------------- Newsletter ---------------------------- */
+
+.newsletter {
+    background-color: black;
+    color: white;
+    margin: 32px 0;
+    padding: 16px;
+    opacity: 0.6;
+}
+
+.newsletter:hover {
+    opacity: 1;
+}
+
+
+/* ---------------------------- Newsletter ---------------------------- */
+
+#contact input {
+    padding: 16px 8px;
+}
+
+
+/* ---------------------------- Footer ---------------------------- */
+
+.footer {
+    padding: 32px;
+    text-align: center;
+    opacity: 0.6;
+}
+
+.footer__social {
+    font-size: 24px;
+}
+
+.footer__social i:hover {
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.footer__copyright a {
+    color: inherit;
+}
+
+.footer__copyright a:hover {
+    color: var(--blue);
+}
+
+
+/* ---------------------------- Responsive: Tablet ---------------------------- */
+
+@media screen and (max-width: 991.98px) {}
+
+
+/* ---------------------------- Responsive: Mobile ---------------------------- */
+
+@media screen and (max-width: 767.98px) {
+    /* Common class */
+    .grid--full-sm {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .hide--sm {
+        display: none;
+    }
+}

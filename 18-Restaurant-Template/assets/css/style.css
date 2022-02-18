@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap');
+:root {
+    --blue: #2196F3;
+    --hover: #ccc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+
+/* ---------------------------- Common ---------------------------- */
+
+h1,
+h5 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+p {
+    margin: 15px 0;
+}
+
+input:not([type="submit"]) {
+    width: 100%;
+    font-family: inherit;
+    line-height: inherit;
+    font-size: inherit;
+    padding: 16px 8px;
+    margin-bottom: 16px;
+    border: 1px solid var(--hover);
+}
+
+.btn {
+    background-color: transparent;
+    color: black;
+    font-size: inherit;
+    line-height: inherit;
+    padding: 8px 16px;
+    border: none;
+    outline: none;
+    user-select: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--hover);
+    color: black;
+}
+
+.bg--black {
+    background-color: black;
+    color: white;
+}
+
+.fs--18 {
+    font-size: 18px;
+}
+
+.fs--24 {
+    font-size: 24px;
+}
+
+
+/* ---------------------------- Main ---------------------------- */
+
+.main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: center / cover no-repeat url("../../../Images/onepage_restaurant.jpg");
+    color: white;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.24px 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu .btn {
+    font-size: 24px;
+    margin-top: 24px;
+}
+
+.brand {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 64px;
+}
+
+.contact {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 0.24px 16px;
+}
+
+
+/* ---------------------------- Footer ---------------------------- */
+
+.footer__copyright a {
+    color: inherit;
+}
+
+.footer__copyright a:hover {
+    color: var(--blue);
+}
+
+
+/* ---------------------------- Modal ---------------------------- */
+
+.menu-modal,
+.contact-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__content {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    margin: 0 16px;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+    animation: zoom 0.4s;
+    overflow-y: auto;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.modal__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    color: white;
+}
+
+.modal__head {
+    background-color: black;
+    padding: 0.24px 16px;
+}
+
+.modal__body {
+    background-color: white;
+    color: black;
+    padding: 0.24px 16px;
+}
+
+.menu-modal .modal__body {
+    font-size: 18px;
+}

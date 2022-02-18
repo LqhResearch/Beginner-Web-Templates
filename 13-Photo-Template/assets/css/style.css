@@ -1,0 +1,223 @@
+:root {
+    --blue: #2196F3;
+    --light: #f1f1f1;
+    --dark: #757575;
+    --hover: #ccc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+
+/* ---------------------------- Common ---------------------------- */
+
+h1,
+h3,
+h5 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+p {
+    margin: 15px 0;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+input:not([type="submit"]) {
+    width: 100%;
+    font-family: inherit;
+    line-height: inherit;
+    font-size: inherit;
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid var(--hover);
+}
+
+.btn {
+    background-color: transparent;
+    color: black;
+    font-size: inherit;
+    line-height: inherit;
+    padding: 8px 16px;
+    border: none;
+    outline: none;
+    user-select: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--hover);
+    color: black;
+}
+
+.btn--width-full {
+    width: 100%;
+}
+
+.fs--48 {
+    font-size: 48px;
+}
+
+.px--16 {
+    padding: 0 16px;
+}
+
+.bg--dark {
+    background-color: var(--dark);
+    color: white;
+}
+
+.text--center {
+    text-align: center;
+}
+
+.flex--center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid--3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid__gutter {
+    gap: 16px;
+}
+
+.grid__gutter>div {
+    display: grid;
+    gap: 16px;
+}
+
+
+/* ---------------------------- Header ---------------------------- */
+
+.header {
+    position: relative;
+}
+
+.header__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 12px 24px;
+    border: 1px solid var(--light);
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+.btn__group {
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    transform: translateX(-50%);
+    background-color: var(--light);
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.btn__group .btn:first-child {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.btn__group .btn:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+
+/* ---------------------------- Photo ---------------------------- */
+
+#photo {
+    padding: 64px 0;
+    text-align: center;
+}
+
+
+/* ---------------------------- Contact ---------------------------- */
+
+#contact {
+    background-color: var(--light);
+    padding: 32px;
+}
+
+.contact__content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.footer__copyright a {
+    color: inherit;
+}
+
+.footer__copyright a:hover {
+    color: var(--blue);
+}
+
+
+/* ---------------------------- Responsive: Tablet ---------------------------- */
+
+@media screen and (max-width: 991.98px) {}
+
+
+/* ---------------------------- Responsive: Mobile ---------------------------- */
+
+@media screen and (max-width: 767.98px) {
+    /* Common class */
+    .grid--full-sm {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .hide--sm {
+        display: none;
+    }
+    .fs--18-sm {
+        font-size: 18px;
+    }
+    /* Header */
+    .btn__group-sm {
+        position: relative;
+        bottom: auto;
+        width: 100%;
+        padding: 16px;
+        display: flex;
+        justify-content: center;
+    }
+}

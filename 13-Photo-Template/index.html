@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo template</title>
+    <link rel="icon" href="./assets/img/favicon.png">
+    <!-- Style -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <img src="../Images/photographer.jpg" alt="Photographer">
+            <div class="header__content">
+                <h1 class="fs--48 fs--18-sm">JANE DOE</h1>
+                <h3 class="hide--sm">PHOTOGRAPHER</h3>
+            </div>
+            <div class="btn__group btn__group-sm">
+                <a href="#" class="btn">Home</a>
+                <a href="#photo" class="btn">Photo</a>
+                <a href="#contact" class="btn">Contact</a>
+            </div>
+        </div>
+
+        <div id="photo">
+            <h3>PHOTO</h3>
+            <p><b>A template for photographers.</b></p>
+            <p class="flex--center">
+                <span onclick="toggleGridGutter()" class="btn bg--dark">Toggle Grid Gutter</span>
+            </p>
+
+            <div class="grid--3 grid--full-sm">
+                <div>
+                    <img src="../Images/rocks.jpg" alt="Rocks">
+                    <img src="../Images/sound.jpg" alt="Sound">
+                    <img src="../Images/woods.jpg" alt="Woods">
+                    <img src="../Images/rock.jpg" alt="Rock">
+                    <img src="../Images/nature.jpg" alt="Nature">
+                    <img src="../Images/mist.jpg" alt="Mist">
+                </div>
+                <div>
+                    <img src="../Images/coffee.jpg" alt="Coffee">
+                    <img src="../Images/bridge.jpg" alt="Bridge">
+                    <img src="../Images/notebook.jpg" alt="Notebook">
+                    <img src="../Images/london.jpg" alt="London">
+                    <img src="../Images/rocks.jpg" alt="Rocks">
+                    <img src="../Images/avatar_g.jpg" alt="Avatar girl">
+                </div>
+                <div>
+                    <img src="../Images/mist.jpg" alt="Mist">
+                    <img src="../Images/workbench.jpg" alt="Workbench">
+                    <img src="../Images/gondol.jpg" alt="Gondol">
+                    <img src="../Images/skies.jpg" alt="Skies">
+                    <img src="../Images/lights.jpg" alt="Lights">
+                    <img src="../Images/workshop.jpg" alt="Workshop">
+                </div>
+            </div>
+        </div>
+
+        <div id="contact">
+            <div class="contact__content">
+                <h3 class="text--center">CONTACT</h3>
+                <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt
+                    sed tellus.</p>
+
+                <p>Name<input type="text"></p>
+                <p>Email<input type="text"></p>
+                <p>Message<input type="text"></p>
+                <p><input class="btn btn--width-full bg--dark" type="submit" value="Send"></p>
+                <br>
+                <p class="footer__copyright">Powered by
+                    <a href="https://github.com/LqhResearch" target="_blank">LqhResearch</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
